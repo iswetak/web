@@ -1,33 +1,36 @@
 .main {
-    background-color: #F2F2F2;
-    margin-left: 31%;
-    padding-top: 1%;  
+    /* padding-top: 1%;  
     padding:0.8%; 
-    width: 32%;
-    border-left-width:1;
-    border-top-width:1;
-    border-bottom-width:1;
-    border-right-width:1 ;
-    border-color: #DCDCDC;
+    width: 302%; */
+    /* border-right-width:1 ; */
+    flex: 1;
+    border: 0.1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    display: flex;
+    /* justify-content: center; */
+    width: 34.6%;
+    margin-left: 31%;
+    padding:-5%; 
+    padding-top: 1%; 
+    padding-bottom: 1%; 
 }
 .icon {
     margin-top: 2%;
-     color:#2196F3;
-      margin-left: 2%;
+    color:#2196F3;
+    margin-left: 9.1px;
 }
 .img {
-    height: 10%;
-    width:10%;
-     margin-left: 10%; 
-     margin-top: -49%;
+    height: 11%;
+    width:11%;
+    margin-left: 4%; 
+    margin-top: -1%;
 }
 .top {
     font-size: 30px;
-     font-weight:bold;
-     margin-top: -11%; 
-     margin-left: 20%;
-     margin-bottom: 4%;
-
+    font-weight:bold;
+    margin-top: 1%; 
+    margin-left: -1%;
+    margin-bottom: -4%;
 }
 
 .maincontainer {
@@ -80,37 +83,42 @@
     border-color: '#D0D0D0';
     padding-top: 10;
 }
-/* @media only screen and (max-width: 1024px)  {
+@media only screen and (max-width: 1024px)  {
     .main {
-        background-color: #F2F2F2;
-        margin-left: 4%;  
-        padding:1.8%; 
-        width: 90%;
-        border-left-width:1;
-        border-top-width:1;
-        border-bottom-width:1;
         border-right-width:1 ;
-        border-color: #DCDCDC;
+    flex: 1;
+    border: 0.1px solid white;
+    background-color: #F2F2F2;
+    display: flex;
+    /* justify-content: center; */
+    width: 34.7%;
+    margin-left: 31%;
+    padding:-5%; 
+    padding-top: 1%; 
+    padding-bottom: 1%; 
     }
     .icon {
-        margin-top: 2%;
-         color:#2196F3;
-          margin-left: 11;
+        margin-top: 5%;
+        color:#2196F3;
+        margin-left: 9.1px;
     }
     .img {
-        height: 14%;
-        width:14%;
-         margin-left: 10%; 
-         margin-top: -69%;
+        height: 12%;
+        width:12%;
+        margin-left: 4%; 
+        margin-top: 5%;
     }
     .top {
         font-size: 30px;
-         font-weight:bold;
-         margin-top: -15%; 
-         margin-left: 21%;
-         margin-bottom: 4%;
+        font-weight:bold;
+        margin-top: 5%; 
+        margin-left: -1%;
+        margin-bottom: 4%;
+    
+    
     
     }
+    
     .maincontainer {
         background-color: 'light';
          justify-content: center;
@@ -119,170 +127,5 @@
           margin-left: 4%;
     
         }
-} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .main {
-        background-color: #F2F2F2;
-        margin-left: 4%;  
-        padding:62%; 
-        width: 90%;
-        border-left-width:1;
-        border-top-width:1;
-        border-bottom-width:1;
-        border-right-width:1 ;
-        border-color: #DCDCDC;
-    }
-    .icon {
-        margin-top: 2%;
-         color:#2196F3;
-          margin-left: 11;
-    }
-    .img {
-        height: 10%;
-        width:10%;
-         margin-left: 10%; 
-         margin-top: -69%;
-    }
-    .top {
-        font-size: 30px;
-         font-weight:bold;
-         margin-top: -15%; 
-         margin-left: 21%;
-         margin-bottom: 4%;
-    
-    }
-    .maincontainer {
-        background-color: 'light';
-         justify-content: center;
-          padding-bottom: -10;
-          width: 93%;
-          margin-left: 4%;
-    
-        }
-  }
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .main {
-        background-color: #F2F2F2;
-        margin-left: 4%;  
-        padding:1.8%; 
-        width: 100%;
-        border-left-width:1;
-        border-top-width:1;
-        border-bottom-width:1;
-        border-right-width:1 ;
-        border-color: #DCDCDC;
-    }
-    .icon {
-        margin-top: 2%;
-         color:#2196F3;
-          margin-left: 11;
-    }
-    .img {
-        height: 14%;
-        width:14%;
-         margin-left: 10%; 
-         margin-top: -69%;
-    }
-    .top {
-        font-size: 30px;
-         font-weight:bold;
-         margin-top: -15%; 
-         margin-left: 21%;
-         margin-bottom: 4%;
-    
-    }
-    .maincontainer {
-        background-color: 'light';
-         justify-content: center;
-          padding-bottom: -10;
-          width: 93%;
-          margin-left: 4%;
-    
-        }
-  } 
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .main {
-        background-color: #F2F2F2;
-        margin-left: 4%;  
-        padding:1.8%; 
-        /* width: 900px; */
-        border-left-width:1;
-        border-top-width:1;
-        border-bottom-width:1;
-        border-right-width:1 ;
-        border-color: #DCDCDC;
-    }
-    .icon {
-        margin-top: 2%;
-         color:#2196F3;
-          margin-left: 11;
-    }
-    .img {
-        height: 5%;
-        width:5%;
-         margin-left: 10%; 
-         margin-top: -69%;
-    }
-    .top {
-        font-size: 30px;
-         font-weight:bold;
-         margin-top: -15%; 
-         margin-left: 21%;
-         margin-bottom: 4%;
-    
-    }
-    .maincontainer {
-        background-color: 'light';
-         justify-content: center;
-          padding-bottom: -10;
-          width: 93%;
-          margin-left: 4%;
-    
-        }
-  } 
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .main {
-        background-color: #F2F2F2;
-        margin-left: 4%;  
-        padding:1.8%; 
-        width: 90%;
-        border-left-width:1;
-        border-top-width:1;
-        border-bottom-width:1;
-        border-right-width:1 ;
-        border-color: #DCDCDC;
-    }
-    .icon {
-        margin-top: 2%;
-         color:#2196F3;
-          margin-left: 11;
-    }
-    .img {
-        height: 14%;
-        width:14%;
-         margin-left: 10%; 
-         margin-top: -69%;
-    }
-    .top {
-        font-size: 30px;
-         font-weight:bold;
-         margin-top: -15%; 
-         margin-left: 21%;
-         margin-bottom: 4%;
-    
-    }
-    .maincontainer {
-        background-color: 'light';
-         justify-content: center;
-          padding-bottom: -10;
-          width: 93%;
-          margin-left: 4%;
-    
-        }
-  }
+}
 

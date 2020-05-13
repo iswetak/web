@@ -52,6 +52,21 @@ const styles = StyleSheet.create({
         marginHorizontal: 55,
         justifyContent: 'space-around',
     },
+    imgg: {
+        flex: 1,
+        marginRight: 1 ,
+        display: 'flex',
+        justifyContent: 'center',
+        borderColor: 'white',
+        borderWidth: 1,
+        borderTopLeftRadius: 2, 
+        borderTopRightRadius: 2,
+        borderRadius: 3,
+        paddingLeft : 4,
+        marginHorizontal: 55,
+        justifyContent: 'space-around',
+
+    },
     subtitle1: {
         justifyContent: 'space-between',
         padding: 2,
@@ -60,9 +75,11 @@ const styles = StyleSheet.create({
         display: "none",
     },
     stretch: {
+        display: 'flex',
+        flex: 1,
          height: 160,
-         width: "auto",
-         marginHorizontal: 58,
+         width: '100%',
+         marginHorizontal: -2,
          marginTop: 5,
      },
     avatard: {
@@ -78,7 +95,7 @@ const styles = StyleSheet.create({
         position:'absolute',
         top:30,
         paddingTop: 32 , 
-        marginHorizontal: 5,
+        marginHorizontal: 3,
      },
     source: {
         flex: 1,
@@ -98,15 +115,16 @@ const styles = StyleSheet.create({
        
     },
     twitterHandle: {
-        marginHorizontal: 30,
+        marginHorizontal: 19,
         padding: 5,
+        marginTop: -2,
     },
     url: {
         color: '#1569C7',
         textAlign: 'right',
         flex: 1,
         flexDirection: 'row',
-        paddingRight: 5 ,
+        paddingRight: 16,
         marginTop: -25, 
         justifyContent: 'flex-end',
         justifyContent: 'space-between',
@@ -148,8 +166,9 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                 {source}
           </Text>
           </View>
+          <View style={styles.imgg}>
          <Image  source={{ uri: urlToImage }} style={urlToImage!=null?styles.stretch:styles.hidden} />
-
+         </View>
 
 
         <View style={styles.container_text}>
