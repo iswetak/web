@@ -42,7 +42,7 @@ export default class App extends Component {
         return (
           <div  className="mainnav" ><br></br>
           <div  className="nav1">
-          <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'20%', position:'sticky'}}><img src={require('./markets@3x.png')} style={{height: 90,width:90,marginTop:14, justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pulse</Link><br></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'20%', position:'sticky'}}><img src={require('./markets@3x.png')} style={{height: 90,width:90,marginTop:14, justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pulse</Link><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div><br></br>
           <div className="nav2">
           <Link to="/News" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'20%',position:'sticky' }}><img src={require('./baskets@3x.png')} style={{height: 90,width:90,marginTop:14,justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News</Link><br/><br/>
