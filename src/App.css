@@ -1,8 +1,8 @@
 .mainnav {
   margin-top:10%;
-   margin-left: 35%; 
-   position:fixed;
-   justify-content:center;
+  margin-left: 35%; 
+  position:fixed;
+  justify-content:center;
 }
 .nav1 {
   width:150%;
@@ -201,33 +201,34 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .mainnav {
-    margin-top:5%;
-   margin-left: 35%; 
+    margin-top:3%;
+   margin-left: 29%; 
   position:fixed;
   justify-content:center;
  }
   .nav1 {
-    width:120%;
+    width:150%;
     background-color: #bcdfeb;
     margin-left: 40%;
     margin-top: 80%;
 
   }
   .nav2 {
-    width:120%;
+    width:150%;
     background-color: #bcdfeb;
-    
+    margin-left: 210%;
+
   }
   .nav3 {
-    width:120%;
+    width:150%;
     background-color: #bcdfeb;
     margin-left: 40%;
 
   }
   .nav4 {
-    width:120%;
+    width:150%;
     background-color: #bcdfeb;
-    /* margin-left: 40%; */
+    margin-left: 210%;
 
   }
 
