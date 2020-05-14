@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         height: 70,
         width: 70,
-        marginHorizontal: 82,
+        marginHorizontal: 60,
         // marginTop: 5,
     },
     

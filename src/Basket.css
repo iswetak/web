@@ -1,14 +1,14 @@
 .ss {
-  background-color: 'light';
    margin-top:2%; 
    padding:2px;
-    width:510px; 
+    width:426px; 
     margin-left: 31%;
     border-left-width:7px;
     border-top-width:1px;
     border-bottom-width:1px;
     border-right-width:1px ;
     border: 0.1px solid #DCDCDC;
+    padding-bottom: 1%;
     /* border-top: 4px; */
   }
   .nn {
@@ -32,13 +32,13 @@
 .tt {
   font-size: 30px;
    font-weight:bold;
-   margin-top: -10%; 
+   margin-top: -12%; 
    margin-left: 17%;
    /* margin-bottom: 4%; */
 }
 .cc {
   margin-left: 10px;
-  width:240px;
+  width:200px;
   border-left-width:1px;
   border-top-width:1px;
   border-bottom-width:1px;
@@ -46,12 +46,7 @@
   border: 0.1px solid #DCDCDC;
   margin-top: 5px; 
 }
-  /* .tabm {
-    /* width:  510px; 
-    height:  33px;
-     margin-left: -40px;
-      margin-top: 10px; */
-  /* } */
+  
   .tab1 {
     text-align: center;
     color: #622ECA;
@@ -76,18 +71,19 @@
   }
   @media only screen and (max-width: 1024px) {
     .ss {
-      background-color: 'light';
-       margin-top:2%; 
-       padding:2px;
-        width:510px; 
-        margin-left: 4%;
-        border-left-width:10px;
-        border-top-width:1px;
-        border-bottom-width:1px;
-        border-right-width:1px ;
-        border: 0.1px solid #DCDCDC;
-        /* border-top: 4px; */
-      }
+      margin-top:2%; 
+      padding:2px;
+       width:426px; 
+       margin-left: 2%;
+       border-left-width:7px;
+       border-top-width:1px;
+       border-bottom-width:1px;
+       border-right-width:1px ;
+       border: 0.1px solid #DCDCDC;
+       padding-bottom: 1%;
+       /* border-top: 4px; */
+     }
+   
       .nn {
         background-color: #F2F2F2;
         margin-left: -1px;
@@ -109,7 +105,7 @@
   .tt {
     font-size: 30px;
      font-weight:bold;
-     margin-top: -10%; 
+     margin-top: -12%; 
      margin-left: 19%;
      /* margin-bottom: 4%; */
 }

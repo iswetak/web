@@ -85,14 +85,12 @@ export  default class Basket extends  React.Component {
           <p className="tt" >
               &nbsp;&nbsp;Basket</p>
               </div>
-          {/* <View style={{ backgroundColor: '#66B2FF', marginLeft: -2,marginTop:-20, width:510, height:70  }}>
-            <Text style={{fontWeight:'bold',fontSize:30, marginTop: 14 }}> &nbsp;&nbsp;Baskets<hr style={{marginLeft: -0, marginRight: 0, marginTop: 20}}/></Text>
-            </View> */}
-          <TabList style={{ width:  510, height:  33, marginLeft: -2.5, marginTop: -1, }}>
+
+          <TabList style={{ width:  430, height:  33, marginLeft: -2.4, marginTop: -1, }}>
             <Tab  style={{ textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
-            <Tab style={{ width:  100,  textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
-            <Tab style={{ width:  100,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
-            <Tab style={{ width:  100,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
+            <Tab style={{width:  -28,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
+            <Tab style={{ width:  -28,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
+            <Tab style={{ width:  90,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
           </TabList>
 
         <View style={{}}>
