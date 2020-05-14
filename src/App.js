@@ -40,7 +40,6 @@ export default class App extends Component {
            
       render() {
         return (
-          <View style={styles.container}>
           <div  className="mainnav"><br></br>
           <div  className="nav1">
           <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'26%', position:'sticky'}}><img src={require('./markets@3x.png')} style={{height: 90,width:90,marginTop:14, justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pulse</Link><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -55,9 +54,9 @@ export default class App extends Component {
            <TouchableOpacity style={styles.btnContainer} onPress={ ()=>{ Linking.openURL('https://robotalk-lkp.s3.ap-south-1.amazonaws.com/index.html')}}  >
            <img src={require('./robotalk@3x (1).png')} style={{height: 90,width:90,marginTop:14, marginLeft:'26%',justifyContent:'center'}}></img><p style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginTop:-6,marginBottom:28, marginLeft:'23%'}}>&nbsp;&nbsp;Robotalk</p>
          </TouchableOpacity>
-         </div><br></br>    
+         </div><br></br>  
+         <div></div>  
  </div>
- </View>
           
     );
   }

@@ -1,15 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Linking,   } from 'react-native';
 import { useHistory , Link, useNavigate, Redirect,  } from 'react-router-dom';
-// import { withNavigation } from 'react-navigation'; 
-// import BasketDetail from "./BasketDetail";
-
-// import { Redirect } from 'react-router';
-// import { Link, } from "react-scroll";
-// import ReadMore from 'react-native-read-more-text';
-// import { Avatar, Divider } from 'react-native-elements';
-
-// import moment from 'moment';
 
 const styles = StyleSheet.create({
     container: {

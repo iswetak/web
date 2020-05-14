@@ -3,31 +3,30 @@
   margin-left: 32%; 
   /* position:sticky; */
   display: flex;
+  flex: 5px;
   justify-content: center;
   align-items: center;
   position: fixed;
   position: absolute;
 }
 .nav1 {
-  width:130%;
+  width:50%;
   background-color: #bcdfeb;
 }
 .nav2 {
-  width:130%;
+  width:50%;
   background-color: #bcdfeb;
   /* /* margin-top:-143%; */
    margin-left:3%; 
 }
 .nav3 {
-  width:130%;
+  width:50%;
   background-color: #bcdfeb;
   margin-top:80%;
   margin-left:-99%; 
-
-
 }
 .nav4 {
-  width:130%;
+  width:50%;
   background-color: #bcdfeb;
   margin-top:80%;
   margin-left:3%; 
@@ -40,9 +39,6 @@
   .mainnav {
     margin-top:2%;
     margin-left: 2%; 
-    /* position:sticky; */
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
     position: fixed;
     position: absolute;
@@ -54,7 +50,6 @@
   .nav2 {
     width:40%;
     background-color: #bcdfeb;
-    /* /* margin-top:-143%; */
      margin-left:3%; 
   }
   .nav3 {
@@ -74,7 +69,7 @@
   }
   
 } 
- /* @media only screen and (max-width: 400px) {
+  /* @media only screen and (max-width: 400px) {
   .mainnav {
     margin-top:-5%;
    margin-left: -7%; 
@@ -108,10 +103,10 @@
 
   }
 
-}
+} */
 
 
- @media only screen and (min-width: 600px) {
+ /* @media only screen and (min-width: 600px) {
   .mainnav {
     margin-top:5%;
    margin-left: 15%; 
@@ -142,8 +137,8 @@
 
   }
 
-}
-@media only screen and (min-width: 768px) {
+} */
+/* @media only screen and (min-width: 768px) {
   .mainnav {
     margin-top:0%;
    margin-left: 25%; 
@@ -174,8 +169,8 @@
 
   }
 
-} 
-@media only screen and (min-width: 992px) {
+}  */
+/* @media only screen and (min-width: 992px) {
   .mainnav {
     margin-top:10%;
    margin-left: 30%; 
@@ -206,44 +201,45 @@
 
   }
 
-} 
+}  */
 
 @media only screen and (min-width: 1200px) {
   .mainnav {
-    margin-top:3%;
-   margin-left: 29%; 
-  position:fixed;
-  justify-content:center;
- }
+    margin-top:-2%;
+    margin-left: 32%; 
+    align-items: center;
+    position: fixed;
+    position: absolute;
+  }
   .nav1 {
-    width:150%;
+    width:40%;
     background-color: #bcdfeb;
-    margin-left: 40%;
-    margin-top: 80%;
-
   }
   .nav2 {
-    width:150%;
+    width:40%;
     background-color: #bcdfeb;
-    margin-left: 210%;
-
+     margin-left:3%; 
   }
   .nav3 {
-    width:150%;
+    width:40%;
     background-color: #bcdfeb;
-    margin-left: 40%;
-
+    margin-top:80%;
+    margin-left:-83%; 
+  
+  
   }
   .nav4 {
-    width:150%;
+    width:40%;
     background-color: #bcdfeb;
-    margin-left: 210%;
-
+    margin-top:80%;
+    margin-left:3%; 
+  
   }
+
 
 }
 
  
 
 
-  */
+  
