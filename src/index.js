@@ -22,6 +22,7 @@ const routing = (
            <Switch >
           <Route>
           <Route path="/" exact component={App} />
+          <Route path="/index.html" exact component={App} />
           <Route path="/Pulse" children={<Pulse />}  />
           <Route path="/News/" component={News} />
           <Route path="/Basket/" component={Basket} />
