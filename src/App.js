@@ -40,23 +40,31 @@ export default class App extends Component {
            
       render() {
         return (
+          <View>
           <div  className="mainnav" ><br></br>
+          <div className="con">
+            <div>
           <div  className="nav1">
           <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'20%', position:'sticky'}}><img src={require('./markets@3x.png')} style={{height: 90,width:90,marginTop:14, justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pulse</Link><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </div><br></br>
+          </div>
           <div className="nav2">
           <Link to="/News" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'20%',position:'sticky' }}><img src={require('./baskets@3x.png')} style={{height: 90,width:90,marginTop:14,justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News</Link><br/><br/>
-          </div><br/><br/>
+          </div>
+          </div><br/><br/><br></br>
+          <div>
           <div className="nav3" >
           <Link to="/Basket" style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginLeft:'20%',position:'sticky' }}><img src={require('./change_pin@3x.png')} style={{height: 90,width:90,marginTop:14,justifyContent:'center'}}></img><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basket</Link><br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           </div><br></br>
+           </div>
            <div className="nav4">
            <TouchableOpacity style={styles.btnContainer} onPress={ ()=>{ Linking.openURL('https://robotalk-lkp.s3.ap-south-1.amazonaws.com/index.html')}}  >
            <img src={require('./robotalk@3x (1).png')} style={{height: 90,width:90,marginTop:14, marginLeft:'20%',justifyContent:'center'}}></img><p style={{fontSize: 20, color:'black',textDecorationLine: 'none',marginTop:-6,marginBottom:28, marginLeft:'20%'}}>&nbsp;&nbsp;Robotalk</p>
          </TouchableOpacity>
          </div>
+         </div>
+         </div>
+        
  </div>
-          
+ </View>  
   
           
     );
