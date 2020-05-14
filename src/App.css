@@ -1,5 +1,5 @@
 .mainnav {
-  margin-top:1%;
+  margin-top:-1%;
   margin-left: 32%; 
   /* position:sticky; */
   display: flex;
@@ -9,17 +9,17 @@
   position: absolute;
 }
 .nav1 {
-  width:150%;
+  width:130%;
   background-color: #bcdfeb;
 }
 .nav2 {
-  width:150%;
+  width:130%;
   background-color: #bcdfeb;
   /* /* margin-top:-143%; */
    margin-left:3%; 
 }
 .nav3 {
-  width:150%;
+  width:130%;
   background-color: #bcdfeb;
   margin-top:80%;
   margin-left:-99%; 
@@ -27,7 +27,7 @@
 
 }
 .nav4 {
-  width:150%;
+  width:130%;
   background-color: #bcdfeb;
   margin-top:80%;
   margin-left:3%; 
