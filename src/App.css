@@ -1,100 +1,244 @@
-.con {
-  flex: 1;
+.mainnav {
+  margin-top:1%;
+  margin-left: 32%; 
+  /* position:sticky; */
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  border: 0.1px solid red;
-  /* background-color: #F2F2F2; */
-  display: flex;
-  margin-top:10%;
-  width: 40%;
-  margin-left: 25%;
-  padding-bottom: 2%; 
+  align-items: center;
   position: fixed;
+  position: absolute;
 }
 .nav1 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  border: 0.1px solid red;
-  width:110%;
+  width:150%;
   background-color: #bcdfeb;
-  margin-left: -140%;
-  margin-top: 28%;
 }
 .nav2 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  border: 0.1px solid red;
-  width:110%;
+  width:150%;
   background-color: #bcdfeb;
-  margin-top: -97%; 
-  margin-left:-25%; 
-  /* position: fixed; */
+  /* /* margin-top:-143%; */
+   margin-left:3%; 
 }
 .nav3 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  border: 0.1px solid red;
-  width: 140%;
+  width:150%;
   background-color: #bcdfeb;
-  margin-left: -210%;
-  margin-top:170%; 
+  margin-top:80%;
+  margin-left:-99%; 
+
 
 }
 .nav4 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  border: 0.1px solid red;
-  width:140%;
+  width:150%;
   background-color: #bcdfeb;
-  margin-top: -128%; 
-  margin-left:-55%; 
+  margin-top:80%;
+  margin-left:3%; 
+
 }
 
-@media only screen and (max-width: 1024px) {
-  .con {
-    flex: 1;
-    flex-direction: row-reverse;
-    justify-content: center;
-    border: 0.1px solid red;
-    background-color: #F2F2F2;
-    display: flex;
-    margin-top:40%;
-    width: 90%;
-    margin-left: 4%;
-    padding-bottom: 2%; 
-  }
+
+
+/* @media only screen and (max-width: 1024px) {
+  .mainnav {
+    margin-top:13%;
+   margin-left: -3%; 
+  position:fixed;
+  justify-content:center;
+ }
   .nav1 {
-     width:140%;
-    /* background-color: #bcdfeb;  */
-    /* margin-left: -210%; */
-    margin-top: 28%;
-    margin-left: -210%;
+    width:130%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+    margin-top: 80%;
+
   }
   .nav2 {
-    width:140%;
-    /* background-color: #bcdfeb; */ 
-    margin-top: -138%; 
-    margin-left:-55%; 
+    width:130%;
+    margin-left:180% ;
+    background-color: #bcdfeb;
+
   }
   .nav3 {
-     width: 140%;
-    /* background-color: #bcdfeb; */ 
-    margin-left: -210%;
-    margin-top:170%; 
-  
+    width:130%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+
   }
   .nav4 {
     width:130%;
-    /* background-color: #bcdfeb;  */
-    margin-top: -128%; 
-    margin-left:42%; 
+    margin-left: 180%;
+    background-color: #bcdfeb;
   }
+  
+} 
+@media only screen and (max-width: 400px) {
+  .mainnav {
+    margin-top:-5%;
+   margin-left: -7%; 
+  position:fixed;
+  justify-content:center;
+ }
+  .nav1 {
+    width:110%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+    margin-top: 80%;
+
+  }
+  .nav2 {
+    width:110%;
+    background-color: #bcdfeb;
+    margin-left: 160%;
+
+    
+  }
+  .nav3 {
+    width:110%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+
+  }
+  .nav4 {
+    width:110%;
+    background-color: #bcdfeb;
+    margin-left: 160%;
+
+  }
+
+}
+
+
+ @media only screen and (min-width: 600px) {
+  .mainnav {
+    margin-top:5%;
+   margin-left: 15%; 
+  position:fixed;
+  justify-content:center;
+ }
+  .nav1 {
+    width:120%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+    margin-top: 80%;
+
+  }
+  .nav2 {
+    width:120%;
+    background-color: #bcdfeb;
+    
+  }
+  .nav3 {
+    width:120%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+
+  }
+  .nav4 {
+    width:120%;
+    background-color: #bcdfeb;
+
+  }
+
+}
+@media only screen and (min-width: 768px) {
+  .mainnav {
+    margin-top:0%;
+   margin-left: 25%; 
+  position:fixed;
+  justify-content:center;
+ }
+  .nav1 {
+    width:120%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+    margin-top: 80%;
+
+  }
+  .nav2 {
+    width:120%;
+    background-color: #bcdfeb;
+    
+  }
+  .nav3 {
+    width:120%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+
+  }
+  .nav4 {
+    width:120%;
+    background-color: #bcdfeb;
+
+  }
+
+} 
+@media only screen and (min-width: 992px) {
+  .mainnav {
+    margin-top:10%;
+   margin-left: 30%; 
+  position:fixed;
+  justify-content:center;
+ }
+  .nav1 {
+    width:120%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+    margin-top: 80%;
+
+  }
+  .nav2 {
+    width:120%;
+    background-color: #bcdfeb;
+    
+  }
+  .nav3 {
+    width:120%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+
+  }
+  .nav4 {
+    width:120%;
+    background-color: #bcdfeb;
+
+  }
+
+} 
+
+@media only screen and (min-width: 1200px) {
+  .mainnav {
+    margin-top:3%;
+   margin-left: 29%; 
+  position:fixed;
+  justify-content:center;
+ }
+  .nav1 {
+    width:150%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+    margin-top: 80%;
+
+  }
+  .nav2 {
+    width:150%;
+    background-color: #bcdfeb;
+    margin-left: 210%;
+
+  }
+  .nav3 {
+    width:150%;
+    background-color: #bcdfeb;
+    margin-left: 40%;
+
+  }
+  .nav4 {
+    width:150%;
+    background-color: #bcdfeb;
+    margin-left: 210%;
+
+  }
+
 }
 
 
 
+
+ */
