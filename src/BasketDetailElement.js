@@ -62,8 +62,7 @@ const styles = StyleSheet.create({
 
 const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) => (
     
-    <div  className="ccc" style={{ }}>
- 
+    <div  className="ccc" >
    <View style={styles.container}>
     <View style={styles.container_text}>
     <Text style={styles.title}> {symbol} </Text>
@@ -87,6 +86,7 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
     <Text style={styles.diff }> {diff} </Text>
     </View>    
     </View>
+
     </div>
 );
 
