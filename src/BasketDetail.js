@@ -71,9 +71,9 @@ export default class Combinations1 extends Component {
 
           <View style={styles.container}>
         <div class="mm">      	
-        <Link to='/Basket'><ArrowBackIosIcon style={{ marginTop: 3, color:'#2196F3', marginLeft: 10}}></ArrowBackIosIcon></Link>
-              <Text style={{ backgroundColor: 'light', marginLeft: 10, fontSize: 23,marginBottom:'10%', marginTop: 30}}>
-           {this.state.basketName}</Text>
+        <Link to='/Basket'><ArrowBackIosIcon style={{ marginTop: 9, color:'#2196F3', marginLeft: 10}}></ArrowBackIosIcon></Link>
+              <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28}}>
+           {this.state.basketName}</p>
             </div>
           <div className="mc">
             <div className="mmcc">

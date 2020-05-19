@@ -79,7 +79,7 @@ export  default class Basket extends  React.Component {
           <div className="ss">
           <div className="nn" ><br/>
             <div className="ic">
-        <Link to='/' className="ic"><ArrowBackIosIcon ></ArrowBackIosIcon></Link>
+          <Link to='/' className="ic"><ArrowBackIosIcon ></ArrowBackIosIcon></Link>
         </div>
         <img src={require('./basket-removebg-preview (1).png')} class="ii" ></img>
           <p className="tt" >
@@ -87,10 +87,10 @@ export  default class Basket extends  React.Component {
               </div>
 
           <TabList style={{ width:  430, height:  33, marginLeft: -2.4, marginTop: -1, }}>
-            <Tab  style={{ textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
-            <Tab style={{width:  -28,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
-            <Tab style={{ width:  -28,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
-            <Tab style={{ width:  95,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
+            <Tab  style={{ marginLeft: 7,width:-1, textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
+            <Tab style={{width:-1,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
+            <Tab style={{ width:-1,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
+            <Tab style={{ width:89,marginLeft:-6,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
           </TabList>
 
         <View style={{}}>
