@@ -90,7 +90,7 @@ export  default class Basket extends  React.Component {
             <Tab  style={{ textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
             <Tab style={{width:  -28,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
             <Tab style={{ width:  -28,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
-            <Tab style={{ width:  90,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
+            <Tab style={{ width:  95,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
           </TabList>
 
         <View style={{}}>
