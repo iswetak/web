@@ -80,7 +80,7 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
 
     <View style={styles.container_text1}>
     <Text style={styles.subtitle2}>
-        {entryPrice || entryPrice.toFixed(2) }
+        {(entryPrice || entryPrice).toFixed(2) }
     </Text>
 
     <Text style={styles.diff }> {diff} </Text>
