@@ -86,7 +86,7 @@ export  default class Basket extends  React.Component {
               &nbsp;&nbsp;Basket</p>
               </div>
 
-          <TabList style={{ width:  430, height:  33, marginLeft: -2.4, marginTop: -1, }}>
+          <TabList style={{ width:  430, height:  33, marginLeft: -2, marginTop: -1, }}>
             <Tab  style={{ marginLeft: 9,width:-1, textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
             <Tab style={{width:-1,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
             <Tab style={{ width:-1,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
