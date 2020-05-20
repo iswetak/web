@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
     },
     stretch: {
         alignItems: 'center',
-        height: 70,
-        width: 70,
+        height: 60,
+        width: 60,
         marginHorizontal: 60,
         // marginTop: 5,
     },

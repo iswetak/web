@@ -37,12 +37,12 @@
    /* margin-bottom: 4%; */
 }
 .cc {
-  margin-left: 10px;
+  margin-left: 9px;
   width:200px;
   border-left-width:1px;
   border-top-width:1px;
   border-bottom-width:1px;
-  border-right-width:1px ;
+  border-right-width:10px ;
   border: 0.1px solid #DCDCDC;
   margin-top: 5px; 
 }
@@ -81,7 +81,7 @@
        border-bottom-width:1px;
        border-right-width:1px ;
        border: 0.1px solid #DCDCDC;
-       padding-bottom: 80%;
+       padding-bottom: 150%;
        /* border-top: 4px; */
      }
    

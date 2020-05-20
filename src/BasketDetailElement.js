@@ -69,7 +69,7 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
 
     <View>
     <Text style={styles.entryMillis }>
-    {moment( entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   
+    {moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   
     </Text>
     </View>
 
