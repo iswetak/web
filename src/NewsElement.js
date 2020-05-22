@@ -5,14 +5,6 @@ import "./News.css";
 
 const styles = StyleSheet.create({
     container: {
-        // flexDirection: 'column',
-        // padding: 10,
-        // marginLeft: 1,
-        // marginRight:1,
-        // marginTop: -5,
-        // marginBottom: 5,
-        // backgroundColor: 'white',
-        // borderRadius: 1,
         flexDirection: 'column',
         padding: 10,
         marginLeft: 1,
@@ -39,6 +31,7 @@ const styles = StyleSheet.create({
 
     },
     container_text: {
+        flexGrow: 60,
         flex: 1,
         marginRight: 1 ,
         display: 'flex',
@@ -56,7 +49,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginRight: 1 ,
         display: 'flex',
-        justifyContent: 'center',
+        // justifyContent: 'center',
         borderColor: 'white',
         borderWidth: 1,
         borderTopLeftRadius: 2, 
@@ -64,7 +57,7 @@ const styles = StyleSheet.create({
         borderRadius: 3,
         paddingLeft : 4,
         marginHorizontal: 55,
-        justifyContent: 'space-around',
+        // justifyContent: 'space-around',
 
     },
     subtitle1: {

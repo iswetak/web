@@ -1,5 +1,6 @@
 .main {
     flex: 1;
+    border: 0.1px solid #F2F2F2;
     display: flex;
     background-color: #F2F2F2;
     margin-left: 31%;

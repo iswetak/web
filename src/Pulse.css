@@ -1,13 +1,8 @@
 .main {
-    /* padding-top: 1%;  
-    padding:0.8%; 
-    width: 302%; */
-    /* border-right-width:1 ; */
     flex: 1;
     border: 0.1px solid #F2F2F2;
     background-color: #F2F2F2;
     display: flex;
-    /* justify-content: center; */
     width: 34.6%;
     margin-left: 31%;
     padding:-5%; 
