@@ -79,7 +79,7 @@ export  default class Basket extends  React.Component {
           <div className="ss">
           <div className="nn" ><br/>
             <div className="ic">
-          <Link to='/' className="ic"><ArrowBackIosIcon ></ArrowBackIosIcon></Link>
+            <Link to='/' className="ic"><ArrowBackIosIcon ></ArrowBackIosIcon></Link>
         </div>
         <img src={require('./basket-removebg-preview (1).png')} class="ii" ></img>
           <p className="tt" >
