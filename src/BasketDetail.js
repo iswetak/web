@@ -75,12 +75,12 @@ export default class Combinations1 extends Component {
               <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28}}>
            {this.state.basketName}</p>
             </div>
-          <div className="mc">
-            <div className="mmcc">
-            <View style={{ alignItems: "flex-start", flex: 1, justifyContent: 'space-between' }}>
+          <div className="vv">
+            <div className="vmcc">
+            <View>
             <Image source={this.state.passportPhoto} style={{width: 65, height: 70, marginTop: -10, marginLeft: 10}} />
             </View>
-            <div className="to" style={{  }}>
+            <div className="to">
             <p class="tto" style={{}}>{this.state.basketDescription}</p>
             </div>
             </div>
