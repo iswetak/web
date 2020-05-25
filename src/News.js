@@ -81,6 +81,8 @@ export default class FlatListBasics extends Component {
         this.setState(
           (prevState, nextProps) => ({
             page: prevState.page + 1,
+            page: nextProps.page + 1,
+
             loadingMore: true
           }),
           () => {
@@ -88,6 +90,12 @@ export default class FlatListBasics extends Component {
           }
         );
       };
+
+    //   windowon.scroll = function(ev)  {
+    //     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    //         alert("you're at the bottom of the page");
+    //     }
+    // };
 
       
 
@@ -138,6 +146,7 @@ export default class FlatListBasics extends Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      overflow: 'scrollbar',
       backgroundColor: '#FFFFFF',
     },
     // item: {
