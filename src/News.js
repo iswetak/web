@@ -102,7 +102,7 @@ export default class FlatListBasics extends Component {
       render() {
         return (
           <View style={styles.container}><br/>
-            <div className="main" >
+            <div className="main1" >
           <div className="icc">
         <Link to='/'><ArrowBackIosIcon className="icc"></ArrowBackIosIcon></Link>
         </div>

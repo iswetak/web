@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Linking } from 'react-native';
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+
 import moment from 'moment';
 import "./News.css";
 
@@ -113,7 +115,7 @@ const styles = StyleSheet.create({
         marginTop: -2,
     },
     url: {
-        color: '#1569C7',
+        // color: '#1569C7',
         textAlign: 'right',
         flex: 1,
         flexDirection: 'row',
@@ -121,7 +123,7 @@ const styles = StyleSheet.create({
         marginTop: -25, 
         justifyContent: 'flex-end',
         justifyContent: 'space-between',
-        marginRight: -30,
+        marginLeft:165
     },
     separator: {
         flex: 1, 
@@ -179,10 +181,12 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
 
         <View style={styles.twitterHandle}>
         <Text  style={twitterHandle!=null?styles.twitterHandle:styles.hidden}>@ {twitterHandle}</Text>
-        <TouchableOpacity >
-        <Text style={styles.url}  onPress={()=>{Linking.openURL(url)}}>
-        {eventCategory=="NEWS"?"Read More":"Open In Twitter"}
+        <TouchableOpacity>
+        <Text style={styles.url}>
+        <a class="link" target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
         </Text>
+    
+        
         </TouchableOpacity>
         </View>
 

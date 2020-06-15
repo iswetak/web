@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-// import Pulse from "./Pulse";
+  import News from "./News";
+
 import "./App.css";
-// import Basket from "./Basket";
+ import Basket from "./Basket";
 // import BasketDetail from "./BasketDetail";
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import { View, Button,Text,Platform, Linking, StyleSheet,TouchableOpacity } from 'react-native';
@@ -40,32 +41,33 @@ export default class App extends Component {
            
       render() {
         return (
-          <div  className="mainnav"><br></br>
-          <div  className="nav1">
-          <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecoration: 'none', position:'sticky'}}>
-            <img src={require('./markets@3x.png')} style={{height: 90,width:90,marginTop:16,marginLeft:'26%', justifyContent:'center'}}></img>
-            &nbsp;&nbsp;<p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-6,marginBottom:-9.3, marginLeft:'38%'}}>Pulse</p></Link><br></br>
-          </div><br></br>
-          <div className="nav2">
-          <Link to="/News" style={{fontSize: 20, color:'black',textDecoration: 'none',position:'sticky' }}>
-            <img src={require('./baskets@3x.png')} style={{height: 90,width:90,marginTop:14,marginLeft:'26%',justifyContent:'center'}}></img>
-            &nbsp;&nbsp;<p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-6,marginBottom:-25, marginLeft:'38%'}}>News</p> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-            </Link><br/><br/>
-          </div><br/><br/>
-          <div className="nav3" >
-          <Link to="/Basket" style={{fontSize: 20, color:'black',textDecoration: 'none',position:'sticky' }}>
-            <img src={require('./change_pin@3x.png')} style={{height: 90,width:90,marginTop:14,marginLeft:'26%',justifyContent:'center'}}></img>
-            &nbsp;&nbsp;<p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-4,marginBottom: -7, marginLeft:'38%'}}>Basket</p> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;            
-            </Link><br/> 
-           </div><br></br>
-           <div className="nav4">
-           <TouchableOpacity style={styles.btnContainer} onPress={ ()=>{ Linking.openURL('https://robotalk-lkp.s3.ap-south-1.amazonaws.com/index.html')}} >
-           <img src={require('./robotalk@3x (1).png')} style={{height: 90,width:90,marginTop:14, marginLeft:'26%',justifyContent:'center'}}></img>
-           <p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-6,marginBottom:20, marginLeft:'23%'}}>&nbsp;&nbsp;Robotalk</p>
-         </TouchableOpacity>
-         </div><br></br>  
-         <div></div>  
- </div>
+          <Basket/>
+//           <div  className="mainnav"><br></br>
+//           <div  className="nav1">
+//           <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecoration: 'none', position:'sticky'}}>
+//             <img src={require('./markets@3x.png')} style={{height: 90,width:90,marginTop:16,marginLeft:'26%', justifyContent:'center'}}></img>
+//             &nbsp;&nbsp;<p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-6,marginBottom:-9.3, marginLeft:'38%'}}>Pulse</p></Link><br></br>
+//           </div><br></br>
+//           <div className="nav2">
+//           <Link to="/News" style={{fontSize: 20, color:'black',textDecoration: 'none',position:'sticky' }}>
+//             <img src={require('./baskets@3x.png')} style={{height: 90,width:90,marginTop:14,marginLeft:'26%',justifyContent:'center'}}></img>
+//             &nbsp;&nbsp;<p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-6,marginBottom:-25, marginLeft:'38%'}}>News</p> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+//             </Link><br/><br/>
+//           </div><br/><br/>
+//           <div className="nav3" >
+//           <Link to="/Basket" style={{fontSize: 20, color:'black',textDecoration: 'none',position:'sticky' }}>
+//             <img src={require('./change_pin@3x.png')} style={{height: 90,width:90,marginTop:14,marginLeft:'26%',justifyContent:'center'}}></img>
+//             &nbsp;&nbsp;<p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-4,marginBottom: -7, marginLeft:'38%'}}>Basket</p> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;            
+//             </Link><br/> 
+//            </div><br></br>
+//            <div className="nav4">
+//            <TouchableOpacity style={styles.btnContainer} onPress={ ()=>{ Linking.openURL('https://robotalk-lkp.s3.ap-south-1.amazonaws.com/index.html')}} >
+//            <img src={require('./robotalk@3x (1).png')} style={{height: 90,width:90,marginTop:14, marginLeft:'26%',justifyContent:'center'}}></img>
+//            <p style={{fontSize: 20, color:'black',textDecoration: 'none',marginTop:-6,marginBottom:20, marginLeft:'23%'}}>&nbsp;&nbsp;Robotalk</p>
+//          </TouchableOpacity>
+//          </div><br></br>  
+//          <div></div>  
+//  </div>
           
     );
   }

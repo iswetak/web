@@ -1,4 +1,4 @@
-.main {
+.main1 {
     flex: 1;
     border: 0.1px solid #F2F2F2;
     display: flex;
@@ -6,7 +6,7 @@
     margin-left: 31%;
     padding-top: 1%;  
     padding:0.8%; 
-    width: 33.1%;
+    width: 31.8%;
     border-color: #DCDCDC;
    }
    .icc {
@@ -36,14 +36,18 @@
       padding-bottom: -10%; 
        width:34.7%;
    }
+   .link{
+   text-decoration: none; 
+   color: #1569C7;
+}
 
    @media only screen and (max-width: 1024px) {
-    .main {
+    .main1 {
         background-color: #F2F2F2;
         margin-left: 4%;
         padding-top: 1%;  
         padding:0.8%; 
-        width: 90%;
+        width: 90.8%;
         border-left-width:1;
         border-top-width:1;
         border-bottom-width:1;
@@ -77,4 +81,10 @@
          margin-bottom: 5%;
     
     }
+    .link{
+        text-decoration: none; 
+        color: #1569C7;
+    }
+     
+    
    }
