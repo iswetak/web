@@ -72,7 +72,7 @@ export default class Combinations1 extends Component {
           <View style={styles.container}>
         <div class="mm">      	
         <Link to='/Basket'><ArrowBackIosIcon style={{ marginTop: 9, color:'#2196F3', marginLeft: 10}}></ArrowBackIosIcon></Link>
-              <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28}}>
+              <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28,fontFamily: 'poppins'}}>
            {this.state.basketName}</p>
             </div>
           <div className="vv">

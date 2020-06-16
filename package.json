@@ -46,15 +46,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "resolutions": {
+    "react-dev-utils/chalk/ansi-styles": "https://github.com/codercodingthecode/ansi-styles"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
     ],
-    "resolutions": {
-      "react-dev-utils/chalk/ansi-styles": "https://github.com/codercodingthecode/ansi-styles"
-    },
+   
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

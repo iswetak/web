@@ -108,7 +108,7 @@ export default class FlatListBasics extends Component {
         </div>
         <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="imm"></img>
           <p className="too">
-              &nbsp;&nbsp;News</p>
+              &nbsp;&nbsp;News Flash</p>
               </div>
             {/* <Text style={{ backgroundColor: '#66B2FF', position: "sticky",marginLeft:'31%',justifyContent: "center", fontSize: 30, fontWeight:'bold', paddingVertical:14, width:510, borderLeftWidth:1,borderTopWidth:1,borderBottomWidth:1,borderRightWidth:1 ,borderColor: '#DCDCDC', }}>
             &nbsp;&nbsp;News</Text> */}

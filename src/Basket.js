@@ -78,19 +78,19 @@ export  default class Basket extends  React.Component {
 
           <div className="ss">
           <div className="nn" ><br/>
-            <div className="ic">
+            {/* <div className="ic">
             <Link to='/' className="ic"><ArrowBackIosIcon ></ArrowBackIosIcon></Link>
-        </div>
+        </div> */}
         <img src={require('./basket-removebg-preview (1).png')} class="ii" ></img>
           <p className="tt" >
-              &nbsp;&nbsp;Basket</p>
+              &nbsp;&nbsp;Stock Screeners</p>
               </div>
 
           <TabList style={{ width:  430, height:  33, marginLeft: -2, marginTop: -1, }}>
-            <Tab  style={{ marginLeft: 9,width:-1, textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
-            <Tab style={{width:-1,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
-            <Tab style={{ width:-1,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
-            <Tab style={{ width:89,marginLeft:-6,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
+            <Tab  style={{ marginLeft: 9,width:-1, textAlign: 'center', color: '#4169E1',fontWeight: 'bold', fontFamily:'poppins' }}>Fundamental</Tab>
+            <Tab style={{width:-1,   textAlign: 'center', color: '#4169E1',fontWeight: 'bold', fontFamily:'poppins'  }}>Technical</Tab>
+            <Tab style={{ width:-1,  textAlign: 'center',color: '#4169E1',fontWeight: 'bold', fontFamily:'poppins' }}>Market</Tab>
+            <Tab style={{ width:89,marginLeft:-6,  textAlign: 'center',color: '#4169E1',fontWeight: 'bold', fontFamily:'poppins' }}>Combination</Tab>
           </TabList>
 
         <View style={{}}>

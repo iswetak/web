@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto',
         flex: 1, 
         flexDirection: 'row', 
+        fontFamily:'poppins'
     },
     container_text: {
         flex: 1,
@@ -40,22 +41,29 @@ const styles = StyleSheet.create({
         color: '#000',
         textAlign: 'left',
         marginLeft: 2,
+        fontFamily:'poppins'
     },
     entryMillis: {
         marginLeft: 100,
         marginRight:'auto',
         textAlign: 'center',
         marginTop: -19,
+        fontFamily:'poppins'
+
     },
     container_text1: {
         marginLeft:10,
+        
     },
     separator: {
         flex: 1,
         borderWidth: 0.10, 
         borderColor: '#D0D0D0',
         paddingTop: 10,
-    }     
+    } ,
+    subtitle2: {
+        
+    }   
     
 });
 
@@ -80,10 +88,10 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
 
     <View style={styles.container_text1}>
     <Text style={styles.subtitle2}>
-        {(entryPrice || entryPrice).toFixed(2) }
+        {(entryPrice || entryPrice).toFixed(2)}
     </Text>
 
-    <Text style={styles.diff }> {diff} </Text>
+    <Text style={styles.diff }>{(diff || diff).toFixed(2)}</Text>
     </View>    
     </View>
 

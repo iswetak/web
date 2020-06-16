@@ -102,12 +102,12 @@ export default class Chat extends Component {
       return (
         <View style={styles.container}><br/>
         <div className="main">
-          <div className="icon">
+          {/* <div className="icon">
         <Link to='/'><ArrowBackIosIcon className="icon" ></ArrowBackIosIcon></Link>
-        </div>
+        </div> */}
         <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' class="img" style={{}}></img>
           <p className="top">
-              &nbsp;&nbsp;Pulse</p>
+              &nbsp;&nbsp; Market Vibes</p>
               </div>
         <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }

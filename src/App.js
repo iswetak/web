@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
   import News from "./News";
-
+  import Pulse from "./Pulse";
 import "./App.css";
  import Basket from "./Basket";
 // import BasketDetail from "./BasketDetail";
@@ -41,7 +41,8 @@ export default class App extends Component {
            
       render() {
         return (
-          <Basket/>
+          //  <Basket/>
+      <Pulse/>
 //           <div  className="mainnav"><br></br>
 //           <div  className="nav1">
 //           <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecoration: 'none', position:'sticky'}}>

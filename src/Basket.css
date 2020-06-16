@@ -27,13 +27,14 @@
     height: 56px;
     width:56px;
     margin-left: 8%;
-     margin-top: -11% !important;
+     margin-top: -3% !important;
 }
 .tt {
   font-size: 30px;
    font-weight:bold;
    margin-top: -12%; 
    margin-left: 17%;
+   font-family:'poppins'
    /* margin-bottom: 4%; */
 }
 .cc {
@@ -43,8 +44,12 @@
   border-top-width:1px;
   border-bottom-width:1px;
   border-right-width:10px ;
-  border: 0.1px solid #DCDCDC;
+  border: 1px solid whitesmoke;
   margin-top: 5px; 
+  border-radius: 5px;
+  box-shadow:1px 1px 2rem -1rem rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); */
+  /* transition: 0.3s; */
 }
   
   .tab1 {
@@ -88,8 +93,7 @@
       .nn {
         background-color: #F2F2F2;
         margin-left: -1px;
-        /* margin-top:-2%; */
-         /* width:510px; */
+       
           height:70px;
     }
     .ic {
@@ -101,7 +105,7 @@
       height: 56px;
       width:56px;
       margin-left: 8%;
-       margin-top: -11% !important;
+       margin-top: -2% !important;
   }
   .tt {
     font-size: 30px;
