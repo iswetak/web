@@ -25,8 +25,8 @@ const routing = (
            <Switch >
           <Route>
           <Route path="/" exact component={App} />
-          <Route path="/index.html" exact component={Pulse} />
-          <Route path="/Pulse/" children={<Pulse />}  />
+          <Route path="/index.html" exact component={News} />
+          <Route path="/News/" children={<News />}  />
           {/* <Route path="/BasketDetail/" component={BasketDetail} /> */}
           {/* <Route path="/News/" component={News} />
           <Route path="/Basket/" component={Basket} />

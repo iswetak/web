@@ -101,7 +101,7 @@ export default class Chat extends Component {
       render() {
       return (
         <View style={styles.container}><br/>
-        <div className="main">
+        <div className="mainbox1">
           {/* <div className="icon">
         <Link to='/'><ArrowBackIosIcon className="icon" ></ArrowBackIosIcon></Link>
         </div> */}

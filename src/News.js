@@ -103,9 +103,9 @@ export default class FlatListBasics extends Component {
         return (
           <View style={styles.container}><br/>
             <div className="main1" >
-          <div className="icc">
+          {/* <div className="icc">
         <Link to='/'><ArrowBackIosIcon className="icc"></ArrowBackIosIcon></Link>
-        </div>
+        </div> */}
         <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="imm"></img>
           <p className="too">
               &nbsp;&nbsp;News Flash</p>

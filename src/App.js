@@ -42,7 +42,8 @@ export default class App extends Component {
       render() {
         return (
           //  <Basket/>
-      <Pulse/>
+      // <Pulse/>
+      <News/>
 //           <div  className="mainnav"><br></br>
 //           <div  className="nav1">
 //           <Link to="/Pulse" style={{fontSize: 20, color:'black',textDecoration: 'none', position:'sticky'}}>

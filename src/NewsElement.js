@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         paddingRight: 7,
         marginRight: 1,
         padding: 3,
+        fontFamily:'poppins',
 
     },
     container_text: {
@@ -65,6 +66,8 @@ const styles = StyleSheet.create({
     subtitle1: {
         justifyContent: 'space-between',
         padding: 2,
+        fontFamily:'poppins',
+
     }, 
     hidden:{
         display: "none",
@@ -98,7 +101,10 @@ const styles = StyleSheet.create({
         paddingRight: 10 ,
         marginTop: -20,
         marginHorizontal: 55,
-        justifyContent: 'center'
+        justifyContent: 'center',  
+              fontFamily:'poppins',
+
+    
     },
     publishedAt:{
         textAlign: 'right',
@@ -106,13 +112,17 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingRight: 10 , 
+        paddingRight: 10 ,
+        fontFamily:'poppins',
+ 
        
     },
     twitterHandle: {
         marginHorizontal: 19,
         padding: 5,
         marginTop: -2,
+        fontFamily:'poppins',
+
     },
     url: {
         // color: '#1569C7',
@@ -123,7 +133,9 @@ const styles = StyleSheet.create({
         marginTop: -25, 
         justifyContent: 'flex-end',
         justifyContent: 'space-between',
-        marginLeft:165
+        marginLeft:165,
+        fontFamily:'poppins',
+
     },
     separator: {
         flex: 1, 
@@ -138,16 +150,24 @@ const styles = StyleSheet.create({
 
 const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publishedAt, source, twitterHandle, url, subtitle3,sourceURL}) => (
     <div className="maincontainer" >
-
-        <View style={styles.separator}>
+        <div className="separator">
+        {/* <View style={styles.separator}> */}
         <View style={styles.container}>
 
-        <View> 
+
+        <div> 
+        <p  class="publishedAt">
+        { moment(publishedAt || moment.now()).format("hh:mm a")}
+                    {/* {publishedAt} */}
+        </p>
+        </div>
+
+        {/* <View> 
         <Text style={styles.publishedAt}>
         { moment(publishedAt || moment.now()).format("hh:mm a")}
                     {/* {publishedAt} */}
-        </Text>
-        </View>
+        {/* </Text>
+        </View> */} 
 
         <View style={styles.avatard}>
         <Image  style={{height:30, width:40}}source={{ uri:  eventCategory=="NEWS"?"https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg"  :avatarURL}} />        
@@ -165,8 +185,19 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
          <Image  source={{ uri: urlToImage }} style={urlToImage!=null?styles.stretch:styles.hidden} />
          </View>
 
+         <div className="container_text">
+        <Text style={styles.title}>
+            {title}
+        </Text>
+            <View style={styles.cardBody}>
 
-        <View style={styles.container_text}>
+        <Text style={styles.subtitle1}>
+            {subtitle1 }
+        </Text><br/>
+        </View> 
+        </div>
+
+        {/* <View style={styles.container_text}>
 
         <Text style={styles.title}>
             {title}
@@ -177,7 +208,7 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
             {subtitle1 }
         </Text><br/>
         </View> 
-        </View>
+        </View> */}
 
         <View style={styles.twitterHandle}>
         <Text  style={twitterHandle!=null?styles.twitterHandle:styles.hidden}>@ {twitterHandle}</Text>
@@ -191,7 +222,8 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
         </View>
 
         </View>
-        </View>
+        </div>
+        {/* </View> */}
         </div>
 );
 

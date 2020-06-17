@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row', 
         paddingLeft: 10,
         marginLeft: 0,
+        fontFamily:'poppins',
     },
     container_text: {
         flex: 1,
@@ -39,6 +40,15 @@ const styles = StyleSheet.create({
         color: '#000',
         textAlign: 'left',
        marginHorizontal: 10,
+       fontFamily:'poppins',
+
+    },
+    subtitle2:{
+        fontFamily:'poppins',
+
+    },
+    publishedAt: {
+        fontFamily:'poppins',  
     },
     separator: {
         flex: 1, 
