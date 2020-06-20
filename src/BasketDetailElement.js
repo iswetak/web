@@ -1,99 +1,99 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+// import { div, h3, StyleSheet} from 'react-native';
 import moment from 'moment';
 
 
-const styles = StyleSheet.create({
-    container: {
-        // flexDirection: 'row',
-        // padding: 10,
-        // marginLeft: 1,
-        // marginRight:1,
-        // marginBottom: 8,      
-        flexDirection: 'row',
-        padding: 10,
-        marginLeft: 1,
-        marginRight:1,
-        // marginTop: -10,
-        marginBottom: 8,
-        // borderRadius: 90,
-        backgroundColor: 'white', 
-    },
-    title: {
-        fontSize: 14,
-        color: '#006EA6',
-        textAlign: 'left',
-        fontFamily: 'Roboto',
-        flex: 1, 
-        flexDirection: 'row', 
-        fontFamily:'poppins'
-    },
-    container_text: {
-        flex: 1,
-        flexDirection: 'column',
-        marginLeft: 2,
-        display: 'flex',
-        justifyContent: 'space-around',
-    },
-    eventDescription: {
-        flex: 1,
-        fontSize: 14,
-        color: '#000',
-        textAlign: 'left',
-        marginLeft: 2,
-        fontFamily:'poppins'
-    },
-    entryMillis: {
-        marginLeft: 100,
-        marginRight:'auto',
-        textAlign: 'center',
-        marginTop: -19,
-        fontFamily:'poppins'
+// const styles = StyleSheet.create({
+//     container: {
+//         // flexDirection: 'row',
+//         // padding: 10,
+//         // marginLeft: 1,
+//         // marginRight:1,
+//         // marginBottom: 8,      
+//         flexDirection: 'row',
+//         padding: 10,
+//         marginLeft: 1,
+//         marginRight:1,
+//         // marginTop: -10,
+//         marginBottom: 8,
+//         // borderRadius: 90,
+//         backgroundColor: 'white', 
+//     },
+//     title: {
+//         fontSize: 14,
+//         color: '#006EA6',
+//         h3Align: 'left',
+//         fontFamily: 'Roboto',
+//         flex: 1, 
+//         flexDirection: 'row', 
+//         fontFamily:'poppins'
+//     },
+//     container_h3: {
+//         flex: 1,
+//         flexDirection: 'column',
+//         marginLeft: 2,
+//         display: 'flex',
+//         justifyContent: 'space-around',
+//     },
+//     eventDescription: {
+//         flex: 1,
+//         fontSize: 14,
+//         color: '#000',
+//         h3Align: 'left',
+//         marginLeft: 2,
+//         fontFamily:'poppins'
+//     },
+//     entryMillis: {
+//         marginLeft: 100,
+//         marginRight:'auto',
+//         h3Align: 'center',
+//         marginTop: -19,
+//         fontFamily:'poppins'
 
-    },
-    container_text1: {
-        marginLeft:10,
+//     },
+//     container_h31: {
+//         marginLeft:10,
         
-    },
-    separator: {
-        flex: 1,
-        borderWidth: 0.10, 
-        borderColor: '#D0D0D0',
-        paddingTop: 10,
-    } ,
-    subtitle2: {
+//     },
+//     separator: {
+//         flex: 1,
+//         borderWidth: 0.10, 
+//         borderColor: '#D0D0D0',
+//         paddingTop: 10,
+//     } ,
+//     subtitle2: {
         
-    }   
+//     }   
     
-});
+// });
 
 
 const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) => (
     
     <div  className="ccc" >
-   <View style={styles.container}>
-    <View style={styles.container_text}>
-    <Text style={styles.title}> {symbol} </Text>
+   <div >
+    <div >
+    <h3 > {symbol} </h3>
 
-    <View>
-    <Text style={styles.entryMillis }>
+    <div>
+    <h3 >
     {moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   
-    </Text>
-    </View>
+    </h3>
+    </div>
 
-    <Text style={styles.eventDescription}>
+    <h3 >
         {eventDescription}
-    </Text>
-    </View>
+    </h3>
+    </div>
 
-    <View style={styles.container_text1}>
-    <Text style={styles.subtitle2}>
+    <div >
+    <h3 >
         {(entryPrice || entryPrice).toFixed(2)}
-    </Text>
+    </h3>
 
-    <Text style={styles.diff }>{(diff || diff).toFixed(2)}</Text>
-    </View>    
-    </View>
+    <h3 >{(diff || diff).toFixed(2)}</h3>
+    </div>    
+    </div>
 
     </div>
 );

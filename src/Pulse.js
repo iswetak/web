@@ -1,14 +1,12 @@
-// import React from 'react';
 import React, { Component } from 'react'
-import {Platform, StyleSheet, TouchableOpacity, Button, Text, View, FlatList,ScrollView} from 'react-native';
+import FlatList from 'flatlist-react';
 import PulseElement from './PulseElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import index from './index';
 import "./Pulse.css";
+// import "./Mainstyle.css";
 
-// import Scrollbar from "react-scrollbars-custom";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 export default class Chat extends Component {
       constructor(props) {
@@ -27,6 +25,7 @@ export default class Chat extends Component {
       }
 
       componentDidMount(){ 
+        console.log("Component mounted")
         this.makeRemoteRequest();
       }
 
@@ -57,10 +56,10 @@ export default class Chat extends Component {
             res => res.json())
           .then(res => {
 
-            
+            console.log("APi response recieved")
             this.setState({
               data: startId === null ? res : [...this.state.data, ...res],
-              loading: false,
+              loading: this.state.data.length<1000,
               loadingMore: false,
               refreshing: false,
               error: res.error || null,
@@ -86,6 +85,7 @@ export default class Chat extends Component {
       };
 
       _handleLoadMore = () => {
+        console.log("Loa dmore called")
         this.setState(
           (prevState, nextProps) => ({
             page: prevState.page + 1,
@@ -97,48 +97,40 @@ export default class Chat extends Component {
         );
       };
 
-
-      render() {
-      return (
-        <View style={styles.container}><br/>
-        <div className="mainbox1">
-          {/* <div className="icon">
-        <Link to='/'><ArrowBackIosIcon className="icon" ></ArrowBackIosIcon></Link>
-        </div> */}
-        <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' class="img" style={{}}></img>
-          <p className="top">
-              &nbsp;&nbsp; Market Vibes</p>
-              </div>
-        <FlatList
-          onScrollEndDrag={() =>  this.makeRemoteRequest() }
-          data={this.state.data}
-          renderItem={({item}) => (
+      renderPerson = (item, key) => {
+        return (
           <PulseElement
                     title={item.symbol}
                     subtitle1={item.eventDescription}
                     subtitle2={item.modelClose} 
                     subtitle3={item.eventTimestamp}
            />
-           )}
-                    onRefresh={this._handleRefresh}
-                    refreshing={this.state.refreshing} 
-                    onEndReached={this._handleLoadMore}
+        );
+      }
+
+      render() {
+      return (
+        <div>
+        <div  className="header-container">
+          {/* <div className="icon">
+        <Link to='/'><ArrowBackIosIcon className="icon" ></ArrowBackIosIcon></Link>
+        </div> */}
+        <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' class="icon-image" ></img>
+          <p className="header">Market Vibes</p>
+              </div>
+        <FlatList
+          loadMoreItems={this._handleLoadMore}
+          list={this.state.data}
+          // renderWhenEmpty={() => <div>List is empty!</div>}
+          renderItem={this.renderPerson}
+          hasMoreItems={this.state.loading}  
                     //  keyExtractor={item => item.eventID}
         /> 
       
-      </View>
+      </div>
 
   );
  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    // backgroundColor: '#FFFFFF',
-  },
-
-  
-});
 
 

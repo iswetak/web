@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+// import { StyleSheet, Text, View } from 'react-native';
+import FlatList from 'flatlist-react';
 import NewsElement from './NewsElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -52,7 +53,7 @@ export default class FlatListBasics extends Component {
             
             this.setState({
               data: startId === null ? res : [...this.state.data, ...res],
-              loading: false,
+              loading: this.state.data.length<1000,
               loadingMore: false,
               refreshing: false,
               error: res.error || null,
@@ -91,17 +92,27 @@ export default class FlatListBasics extends Component {
         );
       };
 
-    //   windowon.scroll = function(ev)  {
-    //     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    //         alert("you're at the bottom of the page");
-    //     }
-    // };
-
+      renderPerson = (item, key) => {
+        return (
+          <NewsElement
+                      sourceURL={item.sourceURL}
+                      eventCategory ={item.eventCategory}
+                        publishedAt={item.publishedAt}
+                        avatarURL={item.avatarURL}
+                        source={item.source}
+                        urlToImage={item.urlToImage}
+                        title={item.title}
+                        subtitle1={item.description }
+                        twitterHandle={item.twitterHandle}
+                       url={item.url}           
+              />   
+        );
+      }
       
 
       render() {
         return (
-          <View style={styles.container}><br/>
+          <div><br/>
             <div className="main1" >
           {/* <div className="icc">
         <Link to='/'><ArrowBackIosIcon className="icc"></ArrowBackIosIcon></Link>
@@ -115,43 +126,16 @@ export default class FlatListBasics extends Component {
             
 
             <FlatList
-              onScrollEndDrag={() =>  this.makeRemoteRequest() }
-              data={this.state.data}
-              renderItem={({item}) => (
-              <NewsElement
-                      sourceURL={item.sourceURL}
-                      eventCategory ={item.eventCategory}
-                        publishedAt={item.publishedAt}
-                        avatarURL={item.avatarURL}
-                        source={item.source}
-                        urlToImage={item.urlToImage}
-                        title={item.title}
-                        subtitle1={item.description }
-                        twitterHandle={item.twitterHandle}
-                       url={item.url}           
-              />    
-          )}
-                      ItemSeparatorComponent={this.renderSeparator}         
-                      onRefresh={this._handleRefresh}
-                      refreshing={this.state.refreshing} 
-                      onEndReached={this._handleLoadMore}
+               loadMoreItems={this._handleLoadMore}
+               list={this.state.data}
+              renderItem={this.renderPerson}
+              hasMoreItems={this.state.loading}  
+
             />
 
 
-          </View>
+          </div>
     );
   }
 }
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      overflow: 'scrollbar',
-      backgroundColor: '#FFFFFF',
-    },
-    // item: {
-    //   padding: 10,
-    //   fontSize: 18,
-    //   height: 44,
-    // },
-})
