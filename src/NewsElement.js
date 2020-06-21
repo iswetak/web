@@ -3,7 +3,8 @@ import React from 'react';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
 import moment from 'moment';
-import "./News.css";
+import  styles from "./News.css";
+
 
 // const styles = StyleSheet.create({
 //     container: {
@@ -158,27 +159,27 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
         { moment(publishedAt || moment.now()).format("hh:mm a")}           
         </p>
         </div>
-
-        <div className="image-container" >
-        <img className="image" style={{}} src={url= eventCategory=="NEWS"?"https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg"  :avatarURL} />        
+        <div className={styles.avatard}>
+        <img style={{height:30, width:40}}  src={url= eventCategory=="NEWS"?"https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg"  :avatarURL} />        
         </div>
 
-        {/* <View style={eventCategory!="NEWS"?styles.twitterHandlei:styles.hidden}> */}
+        <div style={{display: eventCategory!="NEWS"?styles.twitterHandlei : 'none'}} >
         <img style={{height:30, width:40}} src ={url= "https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg" } />
-        {/* </View> */}
+        </div>
+
         <div>
         <p className="source">
         {source}
         </p>
         </div>
         <div className="main-img-header">
-        <img  className="stretch" source={url= urlToImage}  />
+        <img  className="stretch" src={urlToImage}  style={{display: urlToImage!=null?styles.stretch : 'none'}}/>
         </div>
 
-        <div className="container_text">
-        <h3>
+        <div className="container-text">
+        <p style={{color:'#006EA6'}}>
         {title}
-        </h3>
+        </p>
         <div>
 
         <p>
@@ -189,7 +190,7 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
 
 
         <div>
-        <p >@ {twitterHandle}</p>
+        <p style={{display: twitterHandle!=null?styles.twitterHandle : 'none'}}>@ {twitterHandle}</p>
         <p className="url">
         <a class="link" target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
         </p>

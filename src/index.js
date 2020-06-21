@@ -21,8 +21,8 @@ const routing = (
            <Switch >
           <Route>
           <Route path="/" exact component={App} />
-          <Route path="/index.html" exact component={Pulse} />
-          <Route path="/Pulse/" children={<Pulse />}  />
+          <Route path="/index.html" exact component={News} />
+          <Route path="/News/" children={<News />}  />
           {/* <Route path="/BasketDetail/" component={BasketDetail} /> */}
           {/* <Route href="/https://robotalk-lkp.s3.ap-south-1.amazonaws.com/index.html"  /> */} */}
           {/* <button><img src="https://dictionary.cambridge.org/images/thumb/button_noun_002_05071.jpg?version=5.0.81" onPress={ ()=>{ Linking.openURL('https://robotalk-lkp.s3.ap-south-1.amazonaws.com/index.html')}}/></button> */}

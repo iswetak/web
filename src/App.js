@@ -12,8 +12,8 @@ export default class App extends Component {
       render() {
         return (
           // <Basket/>
-      <Pulse/>
-      // <News/>
+      // <Pulse/>
+      <News/>
     );
   }
 }
