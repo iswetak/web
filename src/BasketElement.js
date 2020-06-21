@@ -2,60 +2,6 @@ import React from 'react';
 // import { div, Text, StyleSheet, Image, TouchableOpacity, Linking,   } from 'react-native';
 import { useHistory , Link, useNavigate, Redirect,  } from 'react-router-dom';
 
-<<<<<<< HEAD
-
-const styles = StyleSheet.create({
-    container: {
-        justifyContent: 'center',
-        height: 120,
-        margin: 5,
-        paddingTop: 20,
-
-        // backgroundColor: '#F5FCFF',
-        flex:1,
-
-    },
-    container_text: {
-        flex:1,
-        alignItems: 'center',
-        margin: 5,
-    },
-    stretch: {
-        alignItems: 'center',
-        height: 60,
-        width: 60,
-        marginHorizontal: 60,
-        // marginTop: 5,
-    },
-=======
-// const styles = StyleSheet.create({
-//     container: {
-//         justifyContent: 'center',
-//         height: 120,
-//         margin: 5,
-//         paddingTop: 20,
-//         // backgroundColor: '#F5FCFF',
-//         flex:1,
-
-//     },
-//     container_text: {
-//         flex:1,
-//         alignItems: 'center',
-//         margin: 5,
-//     },
-//     stretch: {
-//         alignItems: 'center',
-//         height: 60,
-//         width: 60,
-//         marginHorizontal: 60,
-//         // marginTop: 5,
-//     },
->>>>>>> 32675aeec328fe3e46eb33216c629fd8f67920c6
-    
-     
-   
-// });
-
 
 
 
@@ -72,7 +18,7 @@ const Basket = ({ title, basketImageURL, basketID, testvalue, nav}) => (
   state: {
     basketID: basketID
   }
-}}>  <img src={'url=basketImageURL'}/></Link>
+}}>  <img src={basketImageURL} style={{height:100,width:90,}}/></Link>
       {/* <TouchableOpacity style={styles.btnContainer} onClick={handleclick}  >
       
       </TouchableOpacity> */}

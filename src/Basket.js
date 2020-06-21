@@ -91,12 +91,12 @@ export  default class Basket extends  React.Component {
           <div className="main-container">
           <div className="header-container">
          <img src={require('./basket-removebg-preview (1).png')} class="icon-image" ></img>
-            <div className="title-container"><h1 class="header" >Stock Screeners</h1></div>
+          <p className="title-container" >Stock Screeners</p>
               </div>
 
-          <TabList className="basket-header" >
+          <TabList style={{display:'flex'}}>
             <Tab >Fundamental</Tab>
-            <Tab>Technical</Tab>
+            <Tab >Technical</Tab>
             <Tab >Market</Tab>
             <Tab >Combination</Tab>
           </TabList>
@@ -112,7 +112,6 @@ export  default class Basket extends  React.Component {
             gridGap: "50px"
           }} 
 
-              // numColumns={2}
         />  
           
         </TabPanel>

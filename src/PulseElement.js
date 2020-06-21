@@ -73,7 +73,7 @@ const PulseElement = ({ title,subtitle1, subtitle2, subtitle3, main }) => (
         <h3 className="title">
             {title}
         </h3>
-        <p >
+        <p className="subtitle1">
             {subtitle1}
         </p>
         </div>

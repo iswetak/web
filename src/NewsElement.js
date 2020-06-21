@@ -149,25 +149,15 @@ import "./News.css";
 
 
 const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publishedAt, source, twitterHandle, url, subtitle3,sourceURL}) => (
-    <div className="maincontainer" >
+        <div className="maincontainer" >
         <div className="separator">
-        {/* <View style={styles.separator}> */}
-        <div>
-
+        <div style={{marginLeft:10, marginRight:10}}>
 
         <div> 
         <p  class="publishedAt">
-        { moment(publishedAt || moment.now()).format("hh:mm a")}
-                    {/* {publishedAt} */}
+        { moment(publishedAt || moment.now()).format("hh:mm a")}           
         </p>
         </div>
-
-        {/* <View> 
-        <Text style={styles.publishedAt}>
-        { moment(publishedAt || moment.now()).format("hh:mm a")}
-                    {/* {publishedAt} */}
-        {/* </Text>
-        </View> */} 
 
         <div className="image-container" >
         <img className="image" style={{}} src={url= eventCategory=="NEWS"?"https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg"  :avatarURL} />        
@@ -175,50 +165,35 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
 
         {/* <View style={eventCategory!="NEWS"?styles.twitterHandlei:styles.hidden}> */}
         <img style={{height:30, width:40}} src ={url= "https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg" } />
-         {/* </View> */}
-         <div>
-         <p className="source">
-                {source}
-          </p>
-          </div>
-          <div>
-         <img  source={url= urlToImage}  />
-         </div>
+        {/* </View> */}
+        <div>
+        <p className="source">
+        {source}
+        </p>
+        </div>
+        <div className="main-img-header">
+        <img  className="stretch" source={url= urlToImage}  />
+        </div>
 
-         <div className="container_text">
+        <div className="container_text">
         <h3>
-            {title}
+        {title}
         </h3>
-            <div>
+        <div>
 
-        <p >
-            {subtitle1 }
+        <p>
+        {subtitle1 }
         </p><br/>
         </div> 
         </div>
 
-        {/* <View style={styles.twitterHandle}>
-        <Text  style={twitterHandle!=null?styles.twitterHandle:styles.hidden}>@ {twitterHandle}</Text>
-        <TouchableOpacity>
-        <Text style={styles.url}>
-        <a class="link" target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
-        </Text>
-    
-        
-        </TouchableOpacity>
-        </View>
-
-        </View> */}
 
         <div>
         <p >@ {twitterHandle}</p>
-        {/* <TouchableOpacity> */}
-        <p >
+        <p className="url">
         <a class="link" target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
         </p>
-    
-        
-        {/* </TouchableOpacity> */}
+
         </div>
 
         </div>

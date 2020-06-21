@@ -54,10 +54,6 @@
       "not dead",
       "not op_mini all"
     ],
-<<<<<<< HEAD
-   
-=======
->>>>>>> 32675aeec328fe3e46eb33216c629fd8f67920c6
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

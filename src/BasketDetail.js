@@ -82,9 +82,9 @@ export default class Combinations1 extends Component {
         return (
 
           <div>
-        <div class="mm">      	
+        <div className="header-container">      	
         <Link to='/Basket'><ArrowBackIosIcon style={{ marginTop: 9, color:'#2196F3', marginLeft: 10}}></ArrowBackIosIcon></Link>
-              <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28,fontFamily: 'poppins'}}>
+              <p className="header">
            {this.state.basketName}</p>
             </div>
           <div className="vv">

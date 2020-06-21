@@ -1,50 +1,55 @@
 .header-container {
-    background-color: #F2F2F2;
-      /* height:20%; */
-      /* max-height:10%; */
+      background-color: #F2F2F2;
+      width: 94%;
+      height: 105%;
       display:flex; 
-      padding-top: 1%;
-
+      padding-top: 12px;
+      margin-left: 3%;
 }
 .icon-image {
     height: 100%;
-    width:25%;
-    max-width: 90px;
+    width:15%;
+     max-width: 90px; 
     margin-left: 6%;   
 }
   
 .header{
     font-size: 5vh;
     text-align: center;
-
-  }
+    margin-top: 1px;
+    margin-left: 15px;
+}
    
 
   .main-container {
-    width:100%;
+    width:94%;
     border-left-width:1px;
     border-top-width:1px;
     border-bottom-width:1px;
     border-right-width:1px ;
-    border: 0.1px solid #DCDCDC;
-    /* border-top: 4px; */
+    flex-direction: row;
+    border: 0.1px solid red;
+    padding-bottom: 10px;
+    margin-left: 3%;
+    /* margin-right: 3%;
+    padding-right: -3%; */
   }
 
 
 .left-container{
-   /* background-color: blue; */
+    margin-left: 2%;
 
+
+   
 }
-.right-container{
+.right-container {
     float: right;
-        /* background-color: wheat; */
-
+    margin-top: -89px;
+    /* flex-direction: column; */
+    margin-right: 2%;
 }
-.subtitle2 {
-   /* font-size: 3vh; */
-}
-.time{
-    /* font-size: 3vh; */
+.subtitle1{
+    /* font-size: 1vw; */
 
 
 }

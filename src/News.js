@@ -112,18 +112,11 @@ export default class FlatListBasics extends Component {
 
       render() {
         return (
-          <div><br/>
-            <div className="main1" >
-          {/* <div className="icc">
-        <Link to='/'><ArrowBackIosIcon className="icc"></ArrowBackIosIcon></Link>
-        </div> */}
-        <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="imm"></img>
-          <p className="too">
-              &nbsp;&nbsp;News Flash</p>
-              </div>
-            {/* <Text style={{ backgroundColor: '#66B2FF', position: "sticky",marginLeft:'31%',justifyContent: "center", fontSize: 30, fontWeight:'bold', paddingVertical:14, width:510, borderLeftWidth:1,borderTopWidth:1,borderBottomWidth:1,borderRightWidth:1 ,borderColor: '#DCDCDC', }}>
-            &nbsp;&nbsp;News</Text> */}
-            
+          <div>
+          <div className="Newsmain-container" >
+          <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="header-img"></img>
+          <p className="header-title">News Flash</p>
+          </div>
 
             <FlatList
                loadMoreItems={this._handleLoadMore}

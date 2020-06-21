@@ -1,13 +1,26 @@
+.main-container {
+  width:100%;
+  border-left-width:1px;
+  border-top-width:1px;
+  border-bottom-width:1px;
+  border-right-width:1px ;
+  border: 0.1px solid #DCDCDC;
+  /* border-top: 4px; */
+}
+.header-container {
+  background-color: #F2F2F2;
+    /* display:flex;  */
+    margin-left: 0px;
+    width:100%;
 
- ul{
-  list-style-type:none;
- }
- .basket-header{
-  display: flex;
+    padding-top: 1%;
 
 }
-.tab-panel{
- 
+.icon-image {
+  height: 100%;
+    width:15%;
+     max-width: 90px; 
+    /* margin-left: 6%;     */
 }
 .title-container{
   min-height: 100%;
@@ -16,11 +29,44 @@
   align-items: center;
 }
 
-    
+
+ ul{
+  list-style-type:none;
+ }
+ .basket-header{
+  display: flex;
+
+}
+.tab1 {
+  color: #622ECA;
+   font-weight: bold;
+  width: 30%;
+  display: flex;
+
+
+
+} 
+.tab2 {
+  color: #622ECA;
+   font-weight: bold;
+  width: 30%;
+
+}
+.tab3 {
+  color: #622ECA;
+   font-weight: bold;
+  width: 30%;
+
+}
+.tab4 {
+  color: #622ECA;
+   font-weight: bold;
+  width: 30%;
+
+}   
 .basket-card {
   margin-left: 9px;
-<<<<<<< HEAD
-  width:200px;
+  width:100%;
   height: 180px;
   border-left-width:1px;
   border-top-width:1px;
@@ -30,7 +76,6 @@
   border: 0.1px solid 'white';
   margin-top: 5px; 
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
-=======
   width:150px 'auto';
   border-left-width:1px;
   border-top-width:1px;
@@ -43,12 +88,5 @@
   margin: 5;
   padding-top: 20;
   flex:1;
->>>>>>> 32675aeec328fe3e46eb33216c629fd8f67920c6
 }
-  .tab1 {
-    text-align: center;
-    color: #622ECA;
-     font-weight: bold;
-    width: 30%;
-  
-  }
+ 
