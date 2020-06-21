@@ -111,10 +111,7 @@ export default class Chat extends Component {
       render() {
       return (
         <div>
-        <div  className="header-container">
-          {/* <div className="icon">
-        <Link to='/'><ArrowBackIosIcon className="icon" ></ArrowBackIosIcon></Link>
-        </div> */}
+        <div  className="pulseheader-container">
         <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' class="icon-image" ></img>
           <p className="header">Market Vibes</p>
               </div>

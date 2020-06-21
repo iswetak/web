@@ -33,8 +33,6 @@ export default class Combinations1 extends Component {
       console.log(url)
         fetch(url, {
           method: 'GET',
-          // withCredentials: true,
-          // credentials: 'include', 
           headers: 
           {'x-api-key': 'fyX65yeBWd5RtlunH4ikc7voovP3Nn1Y5iHFx1Gv',
             'Content-Type': 'application/json'}
@@ -55,7 +53,9 @@ export default class Combinations1 extends Component {
             data: itemArray,
             basketName : item.basketName,
             basketDescription : item.basketDescription,
-            passportPhoto: {uri: item.basketImageURL, isStatic: true}
+            basketImageURL : item.basketImageURL,
+
+            // basketImageURL: {uri: item.basketImageURL, isStatic: true}
           
           })
               
@@ -82,28 +82,19 @@ export default class Combinations1 extends Component {
         return (
 
           <div>
-        <div className="header-container">      	
-        <Link to='/Basket'><ArrowBackIosIcon style={{ marginTop: 9, color:'#2196F3', marginLeft: 10}}></ArrowBackIosIcon></Link>
-              <p className="header">
-           {this.state.basketName}</p>
-            </div>
-          <div className="vv">
-            <div className="vmcc">
-            <div>
-            <img src={this.state.passportPhoto} style={{width: 65, height: 70, marginTop: -10, marginLeft: 10}} />
-            </div>
-            <div className="to">
-            <p class="tto" style={{}}>{this.state.basketDescription}</p>
-            </div>
-            </div>
-            </div>
+        <div className="mainheader-container">      	
+        <Link to='/'><ArrowBackIosIcon className="icon" style={{}}></ArrowBackIosIcon></Link>
+        <p className="mainheader">{this.state.basketName}</p>
+        </div>
+        <div className="header2-container">
+            <img src={this.state.basketImageURL} className="img" ></img>           
+            <p class="title">{this.state.basketDescription}</p>
+        </div>
             
             <FlatList
             onScrollEndDrag={() =>  this.makeRemoteRequest() }
             list={this.state.data}  
             renderItem={this.renderPerson}
-  
-           
             />
           
           </div>

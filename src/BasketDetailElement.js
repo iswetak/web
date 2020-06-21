@@ -70,32 +70,30 @@ import moment from 'moment';
 
 const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) => (
     
-    <div  className="ccc" >
-   <div >
-    <div >
-    <h3 > {symbol} </h3>
+    <div  className="ccc">
 
-    <div>
-    <h3 >
+    <div className="left-container">
+    <p style={{color:'#2196F3'}}> {symbol} </p>
+    <div className="entryMillis">
+    <p>
     {moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   
-    </h3>
+    </p>
     </div>
 
-    <h3 >
+    <p>
         {eventDescription}
-    </h3>
+    </p>
     </div>
 
-    <div >
-    <h3 >
+    <div className="right-container">
+    <p>
         {(entryPrice || entryPrice).toFixed(2)}
-    </h3>
+    </p>
 
-    <h3 >{(diff || diff).toFixed(2)}</h3>
+    <p>{(diff || diff).toFixed(2)}</p>
     </div>    
     </div>
 
-    </div>
 );
 
 export default CustomRow;

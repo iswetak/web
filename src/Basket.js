@@ -88,10 +88,10 @@ export  default class Basket extends  React.Component {
         return (
           <Tabs >     
 
-          <div className="main-container">
-          <div className="header-container">
-         <img src={require('./basket-removebg-preview (1).png')} class="icon-image" ></img>
-          <p className="title-container" >Stock Screeners</p>
+          <div className="basketmain-container">
+          <div className="basket-header">
+         <img src={require('./basket-removebg-preview (1).png')} class="basketicon-image" ></img>
+          <p className="baskettitle-container" >Stock Screeners</p>
               </div>
 
           <TabList style={{display:'flex'}}>
@@ -102,14 +102,14 @@ export  default class Basket extends  React.Component {
           </TabList>
 
         <div>
-          <TabPanel className="tab-panel">
+          <TabPanel>
           <FlatList
           list = {this.state.fundamentalData}    
           renderItem={this.renderPerson}
           display={{
             grid: 2,
             minColumnWidth: "100px",
-            gridGap: "50px"
+            gridGap: "10px"
           }} 
 
         />  
@@ -161,4 +161,5 @@ export  default class Basket extends  React.Component {
         </div>
         </Tabs>
    );
-  }}
+  }
+}

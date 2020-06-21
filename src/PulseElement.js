@@ -69,22 +69,24 @@ import "./Pulse.css";
 const PulseElement = ({ title,subtitle1, subtitle2, subtitle3, main }) => (
         <div className="main-container" >
         
-        <div className="left-container">
-        <h3 className="title">
+        <div className="pulseleft-container">
+        <p style={{color:'#006EA6'}}>
             {title}
-        </h3>
-        <p className="subtitle1">
+        </p>
+        <div className="leftSubtitle1">
+        <p >
             {subtitle1}
         </p>
         </div>
+        </div>
 
-        <div className="right-container">
-        <p className="subtitle2">
+        <div className="pulseright-container">
+        <p >
         {subtitle2}
         </p>
-        <h3 className="time" >
+        <p>
         { moment( subtitle3 || moment.now()).format("hh:mm a") }
-        </h3>
+        </p>
         </div>
 
         </div>

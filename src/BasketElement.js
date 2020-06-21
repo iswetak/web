@@ -5,34 +5,28 @@ import { useHistory , Link, useNavigate, Redirect,  } from 'react-router-dom';
 
 
 
-const Basket = ({ title, basketImageURL, basketID, testvalue, nav}) => (
-    
-    <div >
-        {/* <Redirect to='/BasketDetails' /> */}
+const Basket = ({ title, basketImageURL, basketID, testvalue, nav}) => ( 
+  <div >
     <div className="basket-card">
-    <div >
-    {/* <Link to="/login" /> */}
-
-    <Link to={{
-  pathname: '/BasketDetail',
-  state: {
-    basketID: basketID
-  }
-}}>  <img src={basketImageURL} style={{height:100,width:90,}}/></Link>
-      {/* <TouchableOpacity style={styles.btnContainer} onClick={handleclick}  >
-      
-      </TouchableOpacity> */}
-      {/* </Link> */}
+      <div >
+        <Link to={{
+          pathname: '/BasketDetail',
+          state: {
+            basketID: basketID
+          }
+          }}>
+          <div className="imgc">
+            <img src={basketImageURL} className="img-container" />
+          </div>
+        </Link>
         <div>
-            <h3>
-                {title}
-            </h3>
-
-
+          <p className="title">
+            {title}
+          </p>
         </div>
-        </div>   
+    </div>   
     </div>
-     </div>
+  </div>
 );
 
 

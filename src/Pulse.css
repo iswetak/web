@@ -1,27 +1,26 @@
-.header-container {
+.pulseheader-container {
       background-color: #F2F2F2;
       width: 94%;
       height: 105%;
       display:flex; 
-      padding-top: 12px;
+      padding-top: 1px;
       margin-left: 3%;
+      font-family: poppins;
+
 }
 .icon-image {
     height: 100%;
     width:15%;
      max-width: 90px; 
     margin-left: 6%;   
-}
-  
+}  
 .header{
-    font-size: 5vh;
+    font-size: 25px;
     text-align: center;
-    margin-top: 1px;
+    margin-top: 12px;
     margin-left: 15px;
 }
-   
-
-  .main-container {
+.main-container {
     width:94%;
     border-left-width:1px;
     border-top-width:1px;
@@ -29,31 +28,24 @@
     border-right-width:1px ;
     flex-direction: row;
     border: 0.1px solid red;
-    padding-bottom: 10px;
     margin-left: 3%;
-    /* margin-right: 3%;
-    padding-right: -3%; */
-  }
-
-
-.left-container{
-    margin-left: 2%;
-
-
-   
+    font-family: poppins;
 }
-.right-container {
+.pulseleft-container{
+    margin-left: 2%; 
+    width: 60%;
+  
+}
+/* .leftSubtitle1{
+    width: 60%;
+
+} */
+.pulseright-container {
     float: right;
-    margin-top: -89px;
-    /* flex-direction: column; */
+    margin-top: -85px;
     margin-right: 2%;
-}
-.subtitle1{
-    /* font-size: 1vw; */
-
 
 }
-
 
 
 
