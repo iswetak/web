@@ -2,13 +2,15 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Linking,   } from 'react-native';
 import { useHistory , Link, useNavigate, Redirect,  } from 'react-router-dom';
 
+
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         height: 120,
         margin: 5,
         paddingTop: 20,
-        backgroundColor: '#F5FCFF',
+
+        // backgroundColor: '#F5FCFF',
         flex:1,
 
     },
