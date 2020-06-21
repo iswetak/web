@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+// import { StyleSheet, Text, View } from 'react-native';
+import FlatList from 'flatlist-react';
 import NewsElement from './NewsElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -52,7 +53,7 @@ export default class FlatListBasics extends Component {
             
             this.setState({
               data: startId === null ? res : [...this.state.data, ...res],
-              loading: false,
+              loading: this.state.data.length<1000,
               loadingMore: false,
               refreshing: false,
               error: res.error || null,
@@ -91,34 +92,9 @@ export default class FlatListBasics extends Component {
         );
       };
 
-    //   windowon.scroll = function(ev)  {
-    //     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    //         alert("you're at the bottom of the page");
-    //     }
-    // };
-
-      
-
-      render() {
+      renderPerson = (item, key) => {
         return (
-          <View style={styles.container}><br/>
-            <div className="main1" >
-          <div className="icc">
-        <Link to='/'><ArrowBackIosIcon className="icc"></ArrowBackIosIcon></Link>
-        </div>
-        <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="imm"></img>
-          <p className="too">
-              &nbsp;&nbsp;News</p>
-              </div>
-            {/* <Text style={{ backgroundColor: '#66B2FF', position: "sticky",marginLeft:'31%',justifyContent: "center", fontSize: 30, fontWeight:'bold', paddingVertical:14, width:510, borderLeftWidth:1,borderTopWidth:1,borderBottomWidth:1,borderRightWidth:1 ,borderColor: '#DCDCDC', }}>
-            &nbsp;&nbsp;News</Text> */}
-            
-
-            <FlatList
-              onScrollEndDrag={() =>  this.makeRemoteRequest() }
-              data={this.state.data}
-              renderItem={({item}) => (
-              <NewsElement
+          <NewsElement
                       sourceURL={item.sourceURL}
                       eventCategory ={item.eventCategory}
                         publishedAt={item.publishedAt}
@@ -129,29 +105,37 @@ export default class FlatListBasics extends Component {
                         subtitle1={item.description }
                         twitterHandle={item.twitterHandle}
                        url={item.url}           
-              />    
-          )}
-                      ItemSeparatorComponent={this.renderSeparator}         
-                      onRefresh={this._handleRefresh}
-                      refreshing={this.state.refreshing} 
-                      onEndReached={this._handleLoadMore}
+              />   
+        );
+      }
+      
+
+      render() {
+        return (
+          <div><br/>
+            <div className="main1" >
+          {/* <div className="icc">
+        <Link to='/'><ArrowBackIosIcon className="icc"></ArrowBackIosIcon></Link>
+        </div> */}
+        <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="imm"></img>
+          <p className="too">
+              &nbsp;&nbsp;News Flash</p>
+              </div>
+            {/* <Text style={{ backgroundColor: '#66B2FF', position: "sticky",marginLeft:'31%',justifyContent: "center", fontSize: 30, fontWeight:'bold', paddingVertical:14, width:510, borderLeftWidth:1,borderTopWidth:1,borderBottomWidth:1,borderRightWidth:1 ,borderColor: '#DCDCDC', }}>
+            &nbsp;&nbsp;News</Text> */}
+            
+
+            <FlatList
+               loadMoreItems={this._handleLoadMore}
+               list={this.state.data}
+              renderItem={this.renderPerson}
+              hasMoreItems={this.state.loading}  
+
             />
 
 
-          </View>
+          </div>
     );
   }
 }
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      overflow: 'scrollbar',
-      backgroundColor: '#FFFFFF',
-    },
-    // item: {
-    //   padding: 10,
-    //   fontSize: 18,
-    //   height: 44,
-    // },
-})

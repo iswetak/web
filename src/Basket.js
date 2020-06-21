@@ -1,12 +1,12 @@
 import  React  from  'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { View,Text,FlatList } from 'react-native';
+// import { View,Text, } from 'react-native';
+import FlatList from 'flatlist-react';
 import BasketElement from './BasketElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import "./Basket.css";
-
 
 export  default class Basket extends  React.Component {
     constructor(props) {
@@ -72,41 +72,47 @@ export  default class Basket extends  React.Component {
       });
       
       }
-      render() {
+
+      renderPerson = (item, key) => {
+        console.log("renderPerson")
         return (
-          <Tabs >     
-
-          <div className="ss">
-          <div className="nn" ><br/>
-            <div className="ic">
-            <Link to='/' className="ic"><ArrowBackIosIcon ></ArrowBackIosIcon></Link>
-        </div>
-        <img src={require('./basket-removebg-preview (1).png')} class="ii" ></img>
-          <p className="tt" >
-              &nbsp;&nbsp;Basket</p>
-              </div>
-
-          <TabList style={{ width:  430, height:  33, marginLeft: -2, marginTop: -1, }}>
-            <Tab  style={{ marginLeft: 9,width:-1, textAlign: 'center', color: '#622ECA',fontWeight: 'bold' }}>Fundamental</Tab>
-            <Tab style={{width:-1,   textAlign: 'center', color: '#622ECA',fontWeight: 'bold'  }}>Technical</Tab>
-            <Tab style={{ width:-1,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Market</Tab>
-            <Tab style={{ width:89,marginLeft:-6,  textAlign: 'center',color: '#622ECA',fontWeight: 'bold' }}>Combination</Tab>
-          </TabList>
-
-        <View style={{}}>
-          <TabPanel>
-          <FlatList
-          data = {this.state.fundamentalData}    
-          onScrollEndDrag={() =>  this.makeRemoteRequest() }
-            renderItem={({item}) => (
-            <BasketElement
+          <BasketElement
                 basketImageURL={item.basketImageURL}
                 title={item.basketName}
                 basketID = {item.basketID}
             />
+        );
+      }
 
-            )}            
-              numColumns={2}
+      render() {
+        return (
+          <Tabs >     
+
+          <div className="main-container">
+          <div className="header-container">
+         <img src={require('./basket-removebg-preview (1).png')} class="icon-image" ></img>
+            <div className="title-container"><h1 class="header" >Stock Screeners</h1></div>
+              </div>
+
+          <TabList className="basket-header" >
+            <Tab >Fundamental</Tab>
+            <Tab>Technical</Tab>
+            <Tab >Market</Tab>
+            <Tab >Combination</Tab>
+          </TabList>
+
+        <div>
+          <TabPanel className="tab-panel">
+          <FlatList
+          list = {this.state.fundamentalData}    
+          renderItem={this.renderPerson}
+          display={{
+            grid: 2,
+            minColumnWidth: "100px",
+            gridGap: "50px"
+          }} 
+
+              // numColumns={2}
         />  
           
         </TabPanel>
@@ -115,48 +121,44 @@ export  default class Basket extends  React.Component {
         <TabPanel>
         <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
-          data = {this.state.technicalData}  
-            renderItem={({item}) => (
-            <BasketElement
-                basketImageURL={item.basketImageURL}
-                title={item.basketName}
-                basketID = {item.basketID}
-            />
-            )}            
-              numColumns={2}
+          list = {this.state.technicalData}  
+          renderItem={this.renderPerson}
+          display={{
+            grid: 2,
+            minColumnWidth: "100px",
+            gridGap: "50px"
+          }} 
           /> 
           </TabPanel>
           
           <TabPanel>
           <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
-            data = {this.state.marketData}
-            renderItem={({item}) => (
-            <BasketElement
-                basketImageURL={item.basketImageURL}
-                title={item.basketName}
-                basketID = {item.basketID}
-          />
-            )}            
-                numColumns={2}
+          list = {this.state.marketData}
+            renderItem={this.renderPerson}
+            display={{
+              grid: 2,
+              minColumnWidth: "100px",
+              gridGap: "50px"
+            }}            
+               
           /> 
         </TabPanel>
 
           <TabPanel>
           <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
-          data = {this.state.combinationData}
-            renderItem={({item}) => (
-            <BasketElement
-                basketImageURL={item.basketImageURL}
-                title={item.basketName}
-                basketID = {item.basketID}
-          />
-        )}            
-            numColumns={2}
+          list = {this.state.combinationData}
+          renderItem={this.renderPerson}
+          display={{
+            grid: 2,
+            minColumnWidth: "100px",
+            gridGap: "50px"
+          }} 
+                   
         /> 
         </TabPanel>
-        </View>
+        </div>
         </div>
         </Tabs>
    );

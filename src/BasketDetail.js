@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { StyleSheet,  Text, View, Image} from 'react-native';
-import { FlatList } from 'react-native';
+// import { StyleSheet,  Text, div, Image} from 'react-native';
+import FlatList from 'flatlist-react';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import BasketDetailElement from './BasketDetailElement';
@@ -65,21 +65,33 @@ export default class Combinations1 extends Component {
       });
       };
 
+      renderPerson = (item, key) => {
+        return (
+          <BasketDetailElement
+          symbol={item.symbol}
+          eventDescription={item.eventDescription}
+          entryMillis={item.entryMillis}
+          entryPrice={item.entryPrice}
+          diff={item.lastTradedPrice-item.entryPrice}
+    />
+        );
+      }
+
    
     render() {
         return (
 
-          <View style={styles.container}>
+          <div>
         <div class="mm">      	
         <Link to='/Basket'><ArrowBackIosIcon style={{ marginTop: 9, color:'#2196F3', marginLeft: 10}}></ArrowBackIosIcon></Link>
-              <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28}}>
+              <p style={{ backgroundColor: 'light', marginLeft: 40, fontSize: 23,marginBottom:'2.5%', marginTop: -28,fontFamily: 'poppins'}}>
            {this.state.basketName}</p>
             </div>
           <div className="vv">
             <div className="vmcc">
-            <View>
-            <Image source={this.state.passportPhoto} style={{width: 65, height: 70, marginTop: -10, marginLeft: 10}} />
-            </View>
+            <div>
+            <img src={this.state.passportPhoto} style={{width: 65, height: 70, marginTop: -10, marginLeft: 10}} />
+            </div>
             <div className="to">
             <p class="tto" style={{}}>{this.state.basketDescription}</p>
             </div>
@@ -88,35 +100,16 @@ export default class Combinations1 extends Component {
             
             <FlatList
             onScrollEndDrag={() =>  this.makeRemoteRequest() }
-            data={this.state.data}    
-            renderItem={({item}) => (  
-              <BasketDetailElement
-                  symbol={item.symbol}
-                  eventDescription={item.eventDescription}
-                  entryMillis={item.entryMillis}
-                  entryPrice={item.entryPrice}
-                  diff={item.lastTradedPrice-item.entryPrice}
-            />
-            
-          )}
+            list={this.state.data}  
+            renderItem={this.renderPerson}
+  
+           
             />
           
-          </View>
+          </div>
           
     );
   }
 
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-     paddingTop: 20,
-     paddingBottom: 210  
-
-  },
- 
- 
-});
 

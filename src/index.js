@@ -11,7 +11,7 @@ import News from "./News";
 import Basket from "./Basket";
 import BasketDetail from "./BasketDetail";
 import Chatbot from "./Chatbot";
-import { View, Button, Linking } from 'react-native';
+// import { View, Button, Linking } from 'react-native';
 
 
 import {BrowserRouter as Router,Switch,useLocation,Route,Redirect,Link} from "react-router-dom";
@@ -25,9 +25,9 @@ const routing = (
            <Switch >
           <Route>
           <Route path="/" exact component={App} />
-          <Route path="/index.html" exact component={Basket} />
-          <Route path="/Basket/" children={<Basket />}  />
-          <Route path="/BasketDetail/" component={BasketDetail} />
+          <Route path="/index.html" exact component={Pulse} />
+          <Route path="/Pulse/" children={<Pulse />}  />
+          {/* <Route path="/BasketDetail/" component={BasketDetail} /> */}
           {/* <Route path="/News/" component={News} />
           <Route path="/Basket/" component={Basket} />
           <Route path="/BasketDetail/" cosmponent={BasketDetail} />
