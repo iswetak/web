@@ -175,17 +175,15 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
         <div className="main-img-header">
         <img  className="stretch" src={urlToImage}  style={{display: urlToImage!=null?styles.stretch : 'none'}}/>
         </div>
-
+        <div>
         <div className="container-text">
         <p style={{color:'#006EA6'}}>
         {title}
         </p>
-        <div>
-
         <p>
         {subtitle1 }
         </p><br/>
-        </div> 
+        </div>
         </div>
 
 
