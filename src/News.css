@@ -22,49 +22,44 @@
 }
 .maincontainer {
     width:94%;
-    border-left-width:1px;
-    border-top-width:1px;
-    border-bottom-width:1px;
-    border-right-width:1px ;
     flex-direction: row;
-    border: 0.1px solid #D0D0D0;
-    /* padding-bottom: 10px; */
+    /* border: 0.1px solid #D0D0D0; */
+    padding-bottom: -50px;
     margin-left: 3%;
     font-family: poppins;
 }
+.avatar{
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+.top-header{
+    display: flex;
+}
 .source{
-    flex: 1;
-    flex-direction: row;
-    padding-right: 10px;
-    margin-top: -73px;
     margin-left: 55px;
-    justify-content: center;  
-    font-family:poppins;     
 }  
 .publishedAt {
-    text-align: right;
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding-right: 10px ;
-    margin-top: 0%;
-    margin-bottom: -0%; 
-    font-family: poppins;
-  
+margin-right: -70%;
 }
+/* .description-container{
+    display: flex;
+    flex-direction: column;
+} */
 .main-img-header{
-    flex: 1;
+  /* flex: 1; */
   margin-right: 1px;
   display: flex;
   justify-content: center;
   border: 0.1px solid white;
   border-width: 1;
-  /* borderTopLeftRadius: 2; 
-  borderTopRightRadius: 2; *2q  */
   border-radius: 3px;
   padding-left : 4px;
   margin-left: 55px;
+  margin-top: 50px,
+
 }
 .stretch {
     display: flex;
@@ -72,7 +67,6 @@
      height: 160px;
      width: 100%;
      /* marginHorizontal: -2, */
-     margin-top: 5px,
  }
 .container-text {
     flex: 1;
@@ -80,22 +74,7 @@
     border: 0.1px solid #D0D0D0;
     margin-left: 55px;
     padding: 1px 16px;
-    margin-top: -2px;
-
-    /* display: flex; */
-    /* justify-content: center; */
-    /* border-width: 1px;
-    border-top-left-radius: 1px; 
-    border-top-right-radius: 1px;
-    border-radius: 3px;
-    padding-left : 4px;
-    border: 0.1px solid #D0D0D0;
-    border-left-width:1px;
-    border-top-width:1px;
-    border-bottom-width:1px;
-    border-right-width:1px;
-    margin-left: 55px; */
-    /* justify-content: space-around; */
+    /* margin-top: -2px; */
 }
 .link{
     text-decoration: none; 
@@ -108,11 +87,10 @@
     font-family:poppins;
     
 }
-.twitterHandlei {
-    /* position:absolute;
-    padding-top: 32px; */
+/* .twitterHandlei {
+   
     margin-left: 3px;
- }
+ } */
  .stretch {
           display: flex;
           flex: 1px;
@@ -125,7 +103,7 @@
 .hidden {
     display: none;
 }
-/* .separator {
+ .separator {
     flex: 1px; 
     border-width: 0.1px; 
     border-color: '#D0D0D0';
@@ -133,6 +111,6 @@
     border: 0.1px solid #c74141;
 } 
 
- */
+
 
 
