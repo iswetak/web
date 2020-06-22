@@ -4,7 +4,7 @@ import FlatList from 'flatlist-react';
 import NewsElement from './NewsElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import "./News.css";
+import  styles from "./News.module.css";
 
 export default class FlatListBasics extends Component {
       constructor(props) {
@@ -113,9 +113,9 @@ export default class FlatListBasics extends Component {
       render() {
         return (
           <div>
-          <div className="Newsmain-container" >
-          <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' class="header-img"></img>
-          <p className="header-title">News Flash</p>
+          <div className={styles.Newsmaincontainer} >
+          <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' className={styles.headerimg}></img>
+          <p className={styles.headertitle}>News Flash</p>
           </div>
 
             <FlatList

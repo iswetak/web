@@ -94,9 +94,9 @@ export  default class Basket extends  React.Component {
           <p className="baskettitle-container" >Stock Screeners</p>
               </div>
 
-          <TabList style={{display:'flex'}}>
-            <Tab >Fundamental</Tab>
-            <Tab >Technical</Tab>
+          <TabList style={{}}>
+            <Tab>Fundamental</Tab>
+            <Tab  >Technical</Tab>
             <Tab >Market</Tab>
             <Tab >Combination</Tab>
           </TabList>

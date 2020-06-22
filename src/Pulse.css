@@ -27,7 +27,7 @@
     border-bottom-width:1px;
     border-right-width:1px ;
     flex-direction: row;
-    border: 0.1px solid red;
+    border: 0.1px solid #DCDCDC;
     margin-left: 3%;
     font-family: poppins;
 }
