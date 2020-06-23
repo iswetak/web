@@ -9,25 +9,23 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                 <div className={styles.separator}>
                         <div style={{marginLeft:10, marginRight:10}}>
 
-                        {/* <div className={styles.avatar}> */}
+                        <div className={styles.topheader}>
                         <div className={styles.avatard}>
                         <img style={{height:30, width:40}} src={url= eventCategory=="NEWS"?"https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg"  :avatarURL} />        
                         </div>
 
-                        <div className={eventCategory!="NEWS"?styles.twitterHandlei : styles.hidden} >
-                        <img style={{height:30, width:40}} src ={url= "https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg" } />
-                        </div>
-
-                        <div className={styles.topheader}> 
                         <p className={styles.source}>
                         {source}
                         </p>  
-                        <div style={styles.cardBody}>
                         <p  class={styles.publishedAt}>
                         { moment(publishedAt || moment.now()).format("hh:mm a")}           
-                        </p>
+                        </p>                       
                         </div>
-                        </div>
+
+                        <div className={eventCategory!="NEWS"?styles.twitterHandlei : styles.hidden} >
+                        <img style={{height:30, width:40}} src ={url= "https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg" } />
+                        </div>                       
+
 
  
 
