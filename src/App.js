@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import "./App.css";
  import Basket from "./Basket";
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import Tabs from 'muicss/lib/react/tabs';
 import { useMediaQuery } from "react-responsive";
 
 
@@ -11,6 +12,7 @@ export default class App extends Component {
            
       render() {
         return (
+         
           <Basket/>
       // <Pulse/>
       // <News/>

@@ -6,7 +6,7 @@ import { useHistory , Link, useNavigate, Redirect,  } from 'react-router-dom';
 
 
 const Basket = ({ title, basketImageURL, basketID, testvalue, nav}) => ( 
-  <div >
+  <div>
     <div className="basket-card">
       <div >
         <Link to={{

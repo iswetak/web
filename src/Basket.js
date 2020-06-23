@@ -1,6 +1,6 @@
 import  React  from  'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { Tab, Tabs, TabList,  } from '@feuer/react-tabs';
+// import 'react-tabs/style/react-tabs.css';
 // import { View,Text, } from 'react-native';
 import FlatList from 'flatlist-react';
 import BasketElement from './BasketElement';
@@ -86,23 +86,33 @@ export  default class Basket extends  React.Component {
 
       render() {
         return (
-          <Tabs >     
-
-          <div className="basketmain-container">
+          <div>
           <div className="basket-header">
          <img src={require('./basket-removebg-preview (1).png')} class="basketicon-image" ></img>
           <p className="baskettitle-container" >Stock Screeners</p>
               </div>
-
-          <TabList style={{}}>
-            <Tab>Fundamental</Tab>
+              <div className="basketmain-container">
+          <Tabs  className="tabs" tabsProps={{
+          style: {
+            //  display:"flex",
+            textAlign: "left",
+            justifySelf:4,
+            color:"black",
+          }
+        }}
+        activeTab={{
+          id: "tab1",
+        
+        }}> 
+          {/* <TabList style={{}}> */}
+            {/* <Tab>Fundamental</Tab>
             <Tab  >Technical</Tab>
             <Tab >Market</Tab>
-            <Tab >Combination</Tab>
-          </TabList>
+            <Tab >Combination</Tab> */}
+          {/* </TabList> */}
 
         <div>
-          <TabPanel>
+          <Tabs.Tab id="tab1" className="tabs" title="Fundamental">
           <FlatList
           list = {this.state.fundamentalData}    
           renderItem={this.renderPerson}
@@ -114,10 +124,10 @@ export  default class Basket extends  React.Component {
 
         />  
           
-        </TabPanel>
+        </Tabs.Tab>
 
 
-        <TabPanel>
+        <Tabs.Tab id="tab2" title="Technical">
         <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
           list = {this.state.technicalData}  
@@ -125,12 +135,12 @@ export  default class Basket extends  React.Component {
           display={{
             grid: 2,
             minColumnWidth: "100px",
-            gridGap: "50px"
+            gridGap: "10px"
           }} 
           /> 
-          </TabPanel>
+          </Tabs.Tab>
           
-          <TabPanel>
+          <Tabs.Tab id="tab3"    title="Market">
           <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
           list = {this.state.marketData}
@@ -138,13 +148,13 @@ export  default class Basket extends  React.Component {
             display={{
               grid: 2,
               minColumnWidth: "100px",
-              gridGap: "50px"
+              gridGap: "10px"
             }}            
                
           /> 
-        </TabPanel>
+        </Tabs.Tab>
 
-          <TabPanel>
+          <Tabs.Tab id="tab4"  title="Combination">
           <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
           list = {this.state.combinationData}
@@ -152,14 +162,16 @@ export  default class Basket extends  React.Component {
           display={{
             grid: 2,
             minColumnWidth: "100px",
-            gridGap: "50px"
+            gridGap: "10px"
           }} 
                    
         /> 
-        </TabPanel>
-        </div>
+        </Tabs.Tab>
         </div>
         </Tabs>
+        </div>
+        </div>
+
    );
   }
 }
