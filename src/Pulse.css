@@ -1,23 +1,24 @@
 .pulseheader-container {
       background-color: #F2F2F2;
-      width: 94%;
+      width: 94.2%;
       height: 105%;
       display:flex; 
       padding-top: 1px;
       margin-left: 3%;
+      margin-top: 12px;
       font-family: poppins;
 
 }
 .icon-image {
-    height: 100%;
-    width:15%;
+    /* height: 100%; */
+    width:19%;
      max-width: 90px; 
     margin-left: 6%;   
 }  
 .header{
     font-size: 25px;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 25px;
     margin-left: 15px;
 }
 .main-container {

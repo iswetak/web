@@ -10,16 +10,16 @@
    }
 .headerimg {
     
-    height: 100%;
-    width:15%;
+    /* max-height: 10%; */
+    width: 25%;
      max-width: 90px; 
     margin-left: 6%;
-    margin-top: 15px;  
+    /* margin-top: 15px;   */
 }
 .headertitle {
     font-size: 5vh;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 30px;
     margin-left: 15px;
 }
 .maincontainer {

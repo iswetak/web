@@ -72,25 +72,32 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
     
     <div  className="ccc">
 
-    <div className="left-container">
-    <p style={{color:'#2196F3'}}> {symbol} </p>
+    <div className="leftcontainer">
+    <p className="symbol"> {symbol} </p>
     <div className="entryMillis">
     <p>
     {moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   
     </p>
     </div>
-
-    <p>
-        {eventDescription}
-    </p>
-    </div>
-
-    <div className="right-container">
-    <p>
+    <p className="price">
         {(entryPrice || entryPrice).toFixed(2)}
     </p>
 
-    <p>{(diff || diff).toFixed(2)}</p>
+    {/* <div className="Basketright-container">
+    <p className="eventDescription">
+        {eventDescription}
+    </p>
+    </div>   */}
+    </div>
+
+    <div className="rightcontainer">
+    {/* <div className="Basketright-container"> */}
+    <p className="eventDescription">
+        {eventDescription}
+    </p>
+    {/* </div>   */}
+   
+    <p className="diff">{(diff || diff).toFixed(2)}</p>
     </div>    
     </div>
 

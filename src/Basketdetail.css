@@ -5,8 +5,8 @@
     display:flex; 
     padding-top: 12px;
     margin-left: 3%;
+    margin-top: 12px;
     font-family:poppins;
-
 }
 .icon {
     margin-top: 1px;
@@ -21,7 +21,6 @@
 }
 
 .header2-container {
-    padding-top: 21px;
      width:94%;
      height: 105%;
      margin-left: 3%;
@@ -29,17 +28,17 @@
      display: flex;
 } 
 .img {
-    width: 65px;
-     height: 70px; 
-     margin-top: -12px;
+    width: 18%;
+    max-width: 70px;
       margin-left: 10px
  }
 
 .title {
-    margin-left: 0%;
+    padding-left: 20px;
+    align-items: left;
+    font-size: 2vh;
     font-family: poppins;
 }
-
 .ccc{
     background-color: 'light';
     justify-content: center;
@@ -54,22 +53,29 @@
      font-family:poppins;
 
 }
-
+.leftcontainer{
+    margin-left: 1.2%;
+    margin-right: 1.2%;
+    display: flex;   
+}
+.symbol{
+    padding-right: 10px;
+    color: #2196F3;   
+}
 .entryMillis {
-          margin-left: 120px;
-          margin-right:'auto';
-          margin-top: -40px;
-    
+    padding-left: 10px;
+    width: 40% ;
 }
- 
-.left-container{
-    margin-left: 2%;
-   
+.price{
+    margin-left: auto;
 }
-.right-container {
-    float: right;
-    margin-top: -80px;
-    /* flex-direction: column; */
-    margin-right: 2%;
+.rightcontainer {
+    display: flex;
+    margin-top: -25px;
+    margin-left: 1.2%;
+    margin-right: 1.2%;
 }
+.diff{
+    margin-left: auto;
 
+}
