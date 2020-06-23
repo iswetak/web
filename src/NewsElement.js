@@ -21,27 +21,27 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                         { moment(publishedAt || moment.now()).format("hh:mm a")}           
                         </p>                       
                         </div>
+  
 
+                        <div className={styles.description}>
                         <div className={eventCategory!="NEWS"?styles.twitterHandlei : styles.hidden} >
                         <img style={{height:30, width:40}} src ={url= "https://s3.ap-south-1.amazonaws.com/public.sicrobo/news-logos/"+source+".jpg" } />
-                        </div>                       
+                        </div> 
+                        <div className={styles.rightcontainer}>
+                        <div className={styles.mainimgheader}>
+                        <img  src={urlToImage} className={urlToImage!=null?styles.stretch : styles.hidden} />
+                        </div>
 
-
- 
-
-        <div className={styles.mainimgheader}>
-        {/* <img  className={styles.stretch} src={urlToImage}  /> */}
-        <img  src={urlToImage} className={urlToImage!=null?styles.stretch : styles.hidden} />
-        </div>
-
-        <div className={styles.containertext}>
-        <p className={styles.title} style={{color:'#006EA6'}}>
-        {title}
-        </p>
-        <p>
-        {subtitle1 }
-        </p><br/>
-        </div>
+                        <div className={styles.containertext}>
+                        <p className={styles.title} style={{color:'#006EA6'}}>
+                        {title}
+                        </p>
+                        <p>
+                        {subtitle1 }
+                        </p>
+                        </div>
+                        </div>
+                        </div>
 
 
         <div>
