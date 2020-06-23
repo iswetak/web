@@ -36,23 +36,21 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                         <p className={styles.title} style={{color:'#006EA6'}}>
                         {title}
                         </p>
-                        <p>
+                        <p className={styles.subtitle}>
                         {subtitle1 }
                         </p>
                         </div>
                         </div>
                         </div>
 
-
-        <div>
-        <p className={twitterHandle!=null?styles.twitterHandle : styles.hidden}>@ {twitterHandle}</p>
-        <p className={styles.url}>
-        <a className={styles.link} target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
-        </p>
+                        <div className={styles.footer}>
+                        <p className={twitterHandle!=null?styles.twitterHandle : styles.hidden}>@ {twitterHandle}</p>
+                        <p className={styles.url}>
+                        <a className={styles.link} target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
+                        </p>
+                        </div>
         </div>
         </div>
-        </div>
-
         </div>
 )       
 export default CustomRow;
