@@ -1,12 +1,12 @@
 import  React  from  'react';
-import { Tab, Tabs, TabList,  } from '@feuer/react-tabs';
-// import 'react-tabs/style/react-tabs.css';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 // import { View,Text, } from 'react-native';
 import FlatList from 'flatlist-react';
 import BasketElement from './BasketElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import "./Basket.css";
+import "./App.css";
 
 export  default class Basket extends  React.Component {
     constructor(props) {
@@ -76,11 +76,13 @@ export  default class Basket extends  React.Component {
       renderPerson = (item, key) => {
         console.log("renderPerson")
         return (
+          <div collection-item>
           <BasketElement
                 basketImageURL={item.basketImageURL}
                 title={item.basketName}
                 basketID = {item.basketID}
             />
+            </div>
         );
       }
 
@@ -92,42 +94,36 @@ export  default class Basket extends  React.Component {
           <p className="baskettitle-container" >Stock Screeners</p>
               </div>
               <div className="basketmain-container">
-          <Tabs  className="tabs" tabsProps={{
-          style: {
-            //  display:"flex",
-            textAlign: "left",
-            justifySelf:4,
-            color:"black",
-          }
-        }}
-        activeTab={{
-          id: "tab1",
-        
-        }}> 
+              {/* <TabList>
+              <Tab style={getTabStyle(0)}>Uno</Tab>
+              <Tab style={getTabStyle(1)}>Dos</Tab>
+              <Tab style={getTabStyle(2)}>Tres</Tab>
+            </TabList> */}
+          <Tabs selected={1}>     
           {/* <TabList style={{}}> */}
-            {/* <Tab>Fundamental</Tab>
+            <Tab>Fundamental</Tab>
             <Tab  >Technical</Tab>
             <Tab >Market</Tab>
-            <Tab >Combination</Tab> */}
+            <Tab >Combination</Tab>
           {/* </TabList> */}
 
         <div>
-          <Tabs.Tab id="tab1" className="tabs" title="Fundamental">
+          <TabPanel>
           <FlatList
           list = {this.state.fundamentalData}    
           renderItem={this.renderPerson}
           display={{
             grid: 2,
-            minColumnWidth: "100px",
-            gridGap: "10px"
+            minColumnWidth: "100%",
+            gridGap: "100"
           }} 
 
         />  
           
-        </Tabs.Tab>
+        </TabPanel>
 
 
-        <Tabs.Tab id="tab2" title="Technical">
+        <TabPanel>
         <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
           list = {this.state.technicalData}  
@@ -138,9 +134,9 @@ export  default class Basket extends  React.Component {
             gridGap: "10px"
           }} 
           /> 
-          </Tabs.Tab>
+          </TabPanel>
           
-          <Tabs.Tab id="tab3"    title="Market">
+          <TabPanel>
           <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
           list = {this.state.marketData}
@@ -152,9 +148,9 @@ export  default class Basket extends  React.Component {
             }}            
                
           /> 
-        </Tabs.Tab>
+        </TabPanel>
 
-          <Tabs.Tab id="tab4"  title="Combination">
+          <TabPanel>
           <FlatList
           onScrollEndDrag={() =>  this.makeRemoteRequest() }
           list = {this.state.combinationData}
@@ -166,10 +162,11 @@ export  default class Basket extends  React.Component {
           }} 
                    
         /> 
-        </Tabs.Tab>
+        </TabPanel>
         </div>
         </Tabs>
         </div>
+
         </div>
 
    );

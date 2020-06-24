@@ -2,7 +2,7 @@ module.exports = {
     module: {
       rules: [
         {
-          stretch: /\.css$/i,
+          test: /\.css$/i,
           loader: 'css-loader',
           options: {
             import: true,
