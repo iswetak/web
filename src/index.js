@@ -6,12 +6,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 // import * as serviceWorker from './serviceWorker';
-import Pulse from "./Pulse";
-import News from "./News";
-import Basket from "./Basket";
-import BasketDetail from "./BasketDetail";
-import Chatbot from "./Chatbot";
-// import { View, Button, Linking } from 'react-native';
+import Pulse from "./Pulsecomponent/Pulse";
+import News from "./Newscomponent/News";
+import Basket from "./Basket/Basket";
+import BasketDetail from "./Basket/BasketDetail";
 
 
 import {BrowserRouter as Router,Switch,useLocation,Route,Redirect,Link} from "react-router-dom";

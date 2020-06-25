@@ -3,7 +3,7 @@ import FlatList from 'flatlist-react';
 import PulseElement from './PulseElement';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import index from './index';
+import index from '../index';
 import "./Pulse.css";
 // import "./Mainstyle.css";
 
