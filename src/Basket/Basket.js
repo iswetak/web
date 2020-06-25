@@ -70,15 +70,16 @@ export  default class Basket extends  React.Component {
       
       }
 
-        //   // loadbasketdetail = () =>{
-  //   //   this.props.router.push({ 
-  //   //     pathname: '/BasketDetail',
-  //   //     state: {basketID: 'basketID'}
-  //   // })
-  //   //   // this.props.history.push("/BasketDetail", {basketID:'basketID'})
-  //   //   // this.setState({selected:element})
-  //   //   // console.log('Clicked'+element.basketID);
-  //   // }
+          loadbasketdetail = (element) =>{
+    //   this.props.router.push({ 
+    //     pathname: '/BasketDetail',
+    //     state: {basketID: 'basketID'}
+    // })
+      // this.props.history.push("/BasketDetail", {basketID:'basketID'})
+      this.setState({selected:element})
+      // this.props.updateStreams(element.target.id)  
+      console.log('Clicked'+element.basketID);
+    }
 
 
     
@@ -105,7 +106,7 @@ export  default class Basket extends  React.Component {
           } 
 
           }}> */}
-          <img src={k.basketImageURL} className="img-container" />
+          <img src={k.basketImageURL} className="img-container" onClick={() => this.loadbasketdetail(k)} />
 
           {/* <img src={k.basketImageURL} className="img-container" onClick={this.loadbasketdetail} /> */}
           {/* </Link>  */}
