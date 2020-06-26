@@ -104,7 +104,7 @@ export default class FlatListBasics extends Component {
                         title={item.title}
                         subtitle1={item.description }
                         twitterHandle={item.twitterHandle}
-                        url={item.url}           
+                        twitterurl={item.url}           
               />   
         );
       }

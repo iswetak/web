@@ -4,7 +4,7 @@ import moment from 'moment';
 import CSSModules from 'react-css-modules';
 import  styles from "./News.module.css";
 
-const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publishedAt, source, twitterHandle, url, subtitle3,sourceURL}) => (
+const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publishedAt, source, twitterHandle, twitterurl,url, subtitle3,sourceURL}) => (
         <div className={styles.maincontainer} >
                 <div className={styles.separator}>
                         <div style={{marginLeft:10, marginRight:10}}>
@@ -46,7 +46,7 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                         <div className={styles.footer}>
                         <p className={twitterHandle!=null?styles.twitterHandle : styles.hidden}>@ {twitterHandle}</p>
                         <p className={styles.url}>
-                        <a className={styles.link} target="_blank" href={url}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
+                        <a className={styles.link} target="_blank" href={twitterurl}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
                         </p>
                         </div>
         </div>

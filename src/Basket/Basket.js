@@ -1,5 +1,4 @@
 import  React from  'react';
-import 'react-tabs/style/react-tabs.css';
 import { Link  } from 'react-router-dom';
 import "./Basket.css";
 import Tabs from './Tabs';
@@ -13,6 +12,7 @@ export  default class Basket extends  React.Component {
       this.state = {
         loading: false,
         data: [],
+        basketID : '',
         technicalData :[],
         fundamentalData :[],
         marketData :[],
@@ -70,18 +70,6 @@ export  default class Basket extends  React.Component {
       
       }
 
-          loadbasketdetail = (element) =>{
-    //   this.props.router.push({ 
-    //     pathname: '/BasketDetail',
-    //     state: {basketID: 'basketID'}
-    // })
-      // this.props.history.push("/BasketDetail", {basketID:'basketID'})
-      this.setState({selected:element})
-      // this.props.updateStreams(element.target.id)  
-      console.log('Clicked'+element.basketID);
-    }
-
-
     
 
       render() {
@@ -97,21 +85,17 @@ export  default class Basket extends  React.Component {
           {this.state.fundamentalData.map((k) => (
           <div className="collection-item">
 
-
+ 
           <div className="collection-header">
-          {/* <Link to={{
+          <Link to={{
           pathname: '/BasketDetail',
           state: {
-          basketID : 'basketID'
+          basketID : k.basketID
           } 
-
-          }}> */}
-          <img src={k.basketImageURL} className="img-container" onClick={() => this.loadbasketdetail(k)} />
-
-          {/* <img src={k.basketImageURL} className="img-container" onClick={this.loadbasketdetail} /> */}
-          {/* </Link>  */}
+          }}><img src={k.basketImageURL} className="img-container" /></Link> 
 
           <p>{k.basketName}</p>
+
           </div>
 
           </div>
@@ -125,18 +109,15 @@ export  default class Basket extends  React.Component {
           <div class="collections">
           {this.state.technicalData.map((k) => (
           <div className="collection-item">
-          {/* <Link to={{
+          <div className="collection-header">
+          <Link to={{
           pathname: '/BasketDetail',
           state: {
-          basketID: 'basketID'
-          }
-          }}> */}
-          <div className="collection-header">
-          <img src={k.basketImageURL} className="img-container" onClick={() => this.loadStoxBox(k)} />
+          basketID : k.basketID
+          } 
+          }}><img src={k.basketImageURL} className="img-container" /></Link> 
           <p>{k.basketName}</p>
           </div>
-
-          {/* </Link>  */}
           </div>
 
           ))} 
@@ -150,18 +131,15 @@ export  default class Basket extends  React.Component {
           <div class="collections">
           {this.state.marketData.map((k) => (
           <div className="collection-item">
-          {/* <Link to={{
+          <div className="collection-header">
+          <Link to={{
           pathname: '/BasketDetail',
           state: {
-          basketID: 'basketID'
-          }
-          }}> */}
-          <div className="collection-header">
-          <img src={k.basketImageURL} className="img-container" onClick={() => this.loadStoxBox(k)} />
+          basketID : k.basketID
+          } 
+          }}><img src={k.basketImageURL} className="img-container" /></Link> 
           <p>{k.basketName}</p>
           </div>
-
-          {/* </Link>  */}
           </div>
 
           ))} 
@@ -175,18 +153,15 @@ export  default class Basket extends  React.Component {
           <div class="collections">
           {this.state.combinationData.map((k) => (
           <div className="collection-item">
-          {/* <Link to={{
+          <div className="collection-header">
+          <Link to={{
           pathname: '/BasketDetail',
           state: {
-          basketID: 'basketID'
-          }
-          }}> */}
-          <div className="collection-header">
-          <img src={k.basketImageURL} className="img-container" onClick={() => this.loadStoxBox(k)} />
+          basketID : k.basketID
+          } 
+          }}><img src={k.basketImageURL} className="img-container" /></Link> 
           <p>{k.basketName}</p>
           </div>
-
-          {/* </Link>  */}
           </div>
 
           ))} 
