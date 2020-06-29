@@ -35,7 +35,7 @@
   max-width: 90px; 
 }
 .baskettitle-container{
-  font-size: 3vh;
+  font-size: 23px;
   margin-top: 25px;
   margin-left: 15px;
 }
@@ -46,7 +46,6 @@
   padding-left:-1%;
   
 }
-
 .collection-header{
     font-size: 18px;
     text-align: center;
@@ -54,7 +53,7 @@
     font-family: pppins;
 }
 .collection-item{
-  /* flex: 0 0 28%;      */
+  flex: 0 0 28%;     
   padding: 1%;
   height: auto;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
@@ -144,13 +143,14 @@
      
   } */
 
-  @media (min-width: 200px) and (max-width: 399px) {
+  @media (max-width: 399px) {
     .tab-list-item {
       display: flex;
       flex-direction: row;
-      padding: 5px 5px;
-      margin-right: 7px;
-      margin-left: 6px;
+      padding: 2px 7px;
+      font-weight: 900;
+      /* margin-right: 3px; */
+      margin-left: 2px;
 
       /* margin-right: 1.5%;
       margin-left: 1.5%; */
@@ -180,7 +180,7 @@
  .tab-list-item {
   display: flex;
   flex-direction: row;
-  padding: 5px 5px;
+  padding: 5px 2px;
   margin-right: 10px;
   margin-left: 1px;
 
@@ -193,10 +193,7 @@
   padding-left: 1px;
 }
     
-    
-  
-    
 }
-  }
+}
 
 
