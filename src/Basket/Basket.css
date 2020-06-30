@@ -4,8 +4,6 @@
   padding-left: 10px;
   font-family: pppins;
   cursor: pointer;
-  /* width: 100%; */
-
 }
 
 .tab-list-item {
@@ -78,122 +76,22 @@
   width: 100px;
 }
 
-@media (max-width: 768px) {
-  
-    .collection-item{
-    flex: 0 0 45%; 
-    width: 200px;
-    height: 200px;     
-  }
-}
-
 
 @media (max-width: 700px) {
   
   .collection-item{
-    flex: 0 0 43%; 
-    /* width: 200px;
-    height: 200px; */
-    margin-left: 3%;
-    margin-top: 2%;
+    flex: 0 0 45.4%; 
+  }
+  .tab-list {
+    display: flex;
+    flex-direction: row;
    
   }
+  .tab-list-item {
+    padding: 0.5rem 0.6rem;
+  }
+  
+  
     
 } 
-
-/* @media (min-width: 400px) {
-  .tab-list-item {
-    padding: 5px 5px;
-    margin-right: 5%;
-    margin-left: 1%;
-}
-.tab-list {
-  display: flex;
-  flex-direction: row;
-  padding-left: 1px;
-}
-
-  } 
- */
-  /* @media (min-width: 200px) and (max-width: 399px) {
-    .tab-list-item {
-      display: flex;
-      flex-direction: row;
-      padding: 5px 5px;
-      margin-right: 7px;
-      margin-left: 6px;
-    }
-    .tab-list {
-      display: flex;
-      flex-direction: row;
-      padding-left: 1px;
-    }
-    .img-container{
-      height: 70px;
-      width: 70px;
-    }
-    .collection-item{
-      width: 200px;
-      height: 170px;
-      padding-top: -10%;
-
-    }
-    .collection-header{
-      font-size: 15px;
-     
-  } */
-
-  @media (max-width: 399px) {
-    .tab-list-item {
-      display: flex;
-      flex-direction: row;
-      padding: 2px 7px;
-      font-weight: 900;
-      /* margin-right: 3px; */
-      margin-left: 2px;
-
-      /* margin-right: 1.5%;
-      margin-left: 1.5%; */
-    }
-    .tab-list {
-      display: flex;
-      flex-direction: row;
-      padding-left: 1px;
-    }
-    .img-container{
-      height: 70px;
-      width: 70px;
-    }
-    .collection-item{
-      width: 200px;
-      height: 170px;
-      padding-top: -10%;
-
-    }
-    .collection-header{
-      font-size: 16.5px;
-     
-  }
-
-
- @media  (max-width: 365px){
- .tab-list-item {
-  display: flex;
-  flex-direction: row;
-  padding: 5px 2px;
-  margin-right: 10px;
-  margin-left: 1px;
-
-  /* margin-right: 1.5%;
-  margin-left: 1.5%; */
-}
-.tab-list {
-  display: flex;
-  flex-direction: row;
-  padding-left: 1px;
-}
-    
-}
-}
-
 
