@@ -118,10 +118,8 @@ export default class Chat extends Component {
         <FlatList
           loadMoreItems={this._handleLoadMore}
           list={this.state.data}
-          // renderWhenEmpty={() => <div>List is empty!</div>}
           renderItem={this.renderPerson}
           hasMoreItems={this.state.loading}  
-                    //  keyExtractor={item => item.eventID}
         /> 
       
       </div>
