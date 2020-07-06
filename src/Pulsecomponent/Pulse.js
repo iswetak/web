@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import FlatList from 'flatlist-react';
 import PulseElement from './PulseElement';
-import { Link  } from 'react-router-dom';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import index from '../index';
+import style from "../App.module.css";
 import "./Pulse.css";
-// import "./Mainstyle.css";
 
 
 export default class Chat extends Component {
@@ -111,9 +108,11 @@ export default class Chat extends Component {
       render() {
       return (
         <div>
-        <div  className="pulseheader-container">
-        <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' class="icon-image" ></img>
-          <p className="header">Market Vibes</p>
+        <div  className={style.light_gray_background }>
+          <div  className={style.main_banner}>
+        <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' className={style.banner_logo}></img>
+          <h1 className={style.banner_title}>Market Vibes</h1>
+              </div>
               </div>
         <FlatList
           loadMoreItems={this._handleLoadMore}

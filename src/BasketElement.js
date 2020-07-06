@@ -1,7 +1,7 @@
 import React from 'react';
 // import { div, Text, StyleSheet, Image, TouchableOpacity, Linking,   } from 'react-native';
 import { useHistory , Link, useNavigate, Redirect,  } from 'react-router-dom';
-import "./App.css";
+// import "./App.css";
 
 
 

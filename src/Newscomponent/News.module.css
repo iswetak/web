@@ -1,7 +1,5 @@
-.Newsmaincontainer {
-    background-color: #F2F2F2;
+/* .Newsmaincontainer {
     width: 94%;
-    /* height: 105%; */
     display:flex; 
     padding-top: 1px;
     margin-left: 3%;
@@ -9,25 +7,21 @@
     font-family: poppins;
    }
 .headerimg {
-    
-    /* max-height: 10%; */
-    width: 25%;
+        width: 25%;
      max-width: 90px; 
     margin-left: 6%;
-    /* margin-top: 15px;   */
 }
 .headertitle {
     font-size: 4vh;
     text-align: center;
     margin-top: 30px;
     margin-left: 15px;
-}
+} */
 .maincontainer {
     width:94%;
     flex-direction: row;
     padding-bottom: -50px;
     margin-left: 3%;
-    font-family: poppins;
 }
 
 .topheader{

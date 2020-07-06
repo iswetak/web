@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import { StyleSheet,  Text, div, Image} from 'react-native';
 import FlatList from 'flatlist-react';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';

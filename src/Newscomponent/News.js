@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-// import { StyleSheet, Text, View } from 'react-native';
 import FlatList from 'flatlist-react';
 import NewsElement from './NewsElement';
-import { Link  } from 'react-router-dom';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import  styles from "./News.module.css";
+import style from "../App.module.css";
+import styles from "./News.module.css";
 
 export default class FlatListBasics extends Component {
       constructor(props) {
         super(props);
-        // this.date = props.time;
         this.state = {
           data: [],
           page: 1,
@@ -113,9 +110,11 @@ export default class FlatListBasics extends Component {
       render() {
         return (
           <div>
-          <div className={styles.Newsmaincontainer} >
-          <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png' className={styles.headerimg}></img>
-          <p className={styles.headertitle}>News Flash</p>
+          <div  className={style.light_gray_background}>
+            <div className={style.main_banner}>
+          <img src='https://icons-for-free.com/iconfiles/png/512/morning+news+newspaper+icon-1320136429130706490.png'  className={style.banner_logo}></img>
+          <h1 className={style.banner_title}>News Flash</h1>
+          </div>
           </div>
 
             <FlatList

@@ -4,15 +4,14 @@ import BasketDetail from "./Basket/BasketDetail.js"
 import Pulse from "./Pulsecomponent/Pulse.js"
 import News from "./Newscomponent/News.js"
 
-import "./App.css";
+// import "./App.css";
 
 export default class App extends Component {           
       render() {
         return (
       <div>
          {/* <Basket/> */}
-       {/* <Pulse/> */}
-       {/* <News/> */}
+       <Pulse/>
       </div>
     );
   }
