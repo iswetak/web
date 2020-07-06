@@ -4,7 +4,6 @@ import BasketDetail from "./Basket/BasketDetail.js"
 import Pulse from "./Pulsecomponent/Pulse.js"
 import News from "./Newscomponent/News.js"
 
-// import "./App.css";
 
 export default class App extends Component {           
       render() {

@@ -1,7 +1,10 @@
 /* ---------------------Pulse-Container-------------------- */
 .main-container {
     flex-direction: row;
-    border: 0.1px solid #DCDCDC;    
+    border: 0.1px solid #DCDCDC; 
+    line-height: 0; 
+    padding-bottom: 0.2%;
+    padding-top: 0.2%;
 }
 
 /* --------------------Pulseinside-info------------------ */
