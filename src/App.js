@@ -12,7 +12,7 @@ export default class App extends Component {
       <div>
          {/* <Basket/> */}
        {/* <Pulse/> */}
-       <News/>
+       {/* <News/> */}
       </div>
     );
   }
