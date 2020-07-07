@@ -6,7 +6,7 @@ const PulseElement = ({ title,subtitle1, subtitle2, subtitle3 }) => (
         <div className="main-container">
             <div className="header-container">
             <h2>{title}</h2>
-            <p className="price">{subtitle2} </p>
+            <p className="price">{subtitle2}</p>
             </div>
 
             <div className="description-container">

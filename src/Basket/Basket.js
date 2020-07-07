@@ -1,5 +1,6 @@
 import  React from  'react';
 import { Link  } from 'react-router-dom';
+import style from "../App.module.css";
 import "./Basket.css";
 import Tabs from './Tabs';
 
@@ -75,10 +76,13 @@ export  default class Basket extends  React.Component {
       render() {
         return (
           <div>
-          <div className="basket-header">
-          <img src={require('../Images/basket-removebg-preview (1).png')} class="basketicon-image" ></img>
-          <p className="baskettitle-container" >Stock Screeners</p>
-          </div>   
+             <div className={style.light_gray_background }>
+             <div className={style.main_banner}>
+             <img src={require('../Images/basket-removebg-preview (1).png')} className={style.banner_logo}></img>
+             <h1 className={style.banner_title}>Stock Screeners</h1>
+             </div>
+             </div>  
+               
           <Tabs>
           <div  label="Fundamental">
           <div class="collections">

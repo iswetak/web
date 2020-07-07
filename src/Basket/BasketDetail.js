@@ -3,6 +3,7 @@ import FlatList from 'flatlist-react';
 import { Link  } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import BasketDetailElement from './BasketDetailElement';
+import style from "../App.module.css";
 import "./Basketdetail.css";
 
 
@@ -78,17 +79,19 @@ export default class Combinations1 extends Component {
 
    
     render() {
-        return (
+      return (
+        <div>
+          <div className={style.light_gray_background}>
+          <div className={style.main_banner}>      	
+          <Link to='/'><ArrowBackIosIcon className="icon"></ArrowBackIosIcon></Link>
+          <h1 className="mainheader">{this.state.basketName}</h1>
+          </div>
+          </div>
 
-          <div>
-        <div className="mainheader-container">      	
-        <Link to='/'><ArrowBackIosIcon className="icon" style={{}}></ArrowBackIosIcon></Link>
-        <p className="mainheader">{this.state.basketName}</p>
-        </div>
-        <div className="header2-container">
-            <img src={this.state.basketImageURL} className="img" ></img>           
-            <p class="title">{this.state.basketDescription}</p>
-        </div>
+          <div className={style.main_banner}>
+              <img src={this.state.basketImageURL} className={style.banner_logo}></img>           
+              <h2 className={style.banner_title}>{this.state.basketDescription}</h2>
+          </div>
             
             <FlatList
             onScrollEndDrag={() =>  this.makeRemoteRequest() }

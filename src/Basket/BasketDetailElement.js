@@ -6,7 +6,7 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
     <div  className="ccc">
 
     <div className="leftcontainer">
-    <p className="symbol"> {symbol} </p>
+    <h2 className="symbol"> {symbol} </h2>
     <div className="entryMillis">
     <p>
     {moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   

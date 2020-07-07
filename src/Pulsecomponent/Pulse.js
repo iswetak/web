@@ -110,10 +110,11 @@ export default class Chat extends Component {
         <div>
         <div  className={style.light_gray_background }>
           <div  className={style.main_banner}>
-        <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' className={style.banner_logo}></img>
+          <img src='https://www.adroitlogic.com/static/assets/images/icons/as2station-monitoring.png' className={style.banner_logo}></img>
           <h1 className={style.banner_title}>Market Vibes</h1>
-              </div>
-              </div>
+          </div>
+          </div>
+          
         <FlatList
           loadMoreItems={this._handleLoadMore}
           list={this.state.data}
