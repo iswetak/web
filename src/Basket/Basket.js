@@ -89,7 +89,6 @@ export  default class Basket extends  React.Component {
           {this.state.fundamentalData.map((k) => (
           <div className="collection-item">
 
- 
           <div className="collection-header">
           <Link to={{
           pathname: '/BasketDetail',
@@ -97,15 +96,11 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-
-          <p>{k.basketName}</p>
-
+          <h2 className={style.header_h2_color}>{k.basketName}</h2>
           </div>
-
           </div>
+          ))}
 
-
-          ))} 
           </div>
           </div>
 
@@ -120,7 +115,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <p>{k.basketName}</p>
+          <h2 className={style.header_h2_color}>{k.basketName}</h2>
           </div>
           </div>
 
@@ -142,7 +137,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <p>{k.basketName}</p>
+          <h2 className={style.header_h2_color}>{k.basketName}</h2>
           </div>
           </div>
 
@@ -164,7 +159,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <p>{k.basketName}</p>
+          <h2 className={style.header_h2_color}>{k.basketName}</h2>
           </div>
           </div>
 

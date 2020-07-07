@@ -54,8 +54,6 @@ export default class Combinations1 extends Component {
             basketName : item.basketName,
             basketDescription : item.basketDescription,
             basketImageURL : item.basketImageURL,
-
-            // basketImageURL: {uri: item.basketImageURL, isStatic: true}
           
           })
               
@@ -83,14 +81,14 @@ export default class Combinations1 extends Component {
         <div>
           <div className={style.light_gray_background}>
           <div className={style.main_banner}>      	
-          <Link to='/'><ArrowBackIosIcon className="icon"></ArrowBackIosIcon></Link>
+          <Link to='/'><ArrowBackIosIcon className="header-icon"></ArrowBackIosIcon></Link>
           <h1 className="mainheader">{this.state.basketName}</h1>
           </div>
           </div>
 
           <div className={style.main_banner}>
               <img src={this.state.basketImageURL} className={style.banner_logo}></img>           
-              <h2 className={style.banner_title}>{this.state.basketDescription}</h2>
+              <h2 className={style.banner_title, style.header_h2_color} >{this.state.basketDescription}</h2>
           </div>
             
             <FlatList

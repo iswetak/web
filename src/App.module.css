@@ -21,7 +21,8 @@
 body {
     font-family: "poppins";
    --light-gray-color: #F2F2F2;
-   --font-color: #006EA6
+   --font-color: #006EA6;
+   --h2-color: black
 }
 .light_gray_background{
     background-color: var(--light-gray-color);
@@ -40,6 +41,9 @@ body {
 }
 .banner_title{
   margin-left: 1%;
+}
+.header_h2_color {
+  color: var(--h2-color);
 }
 
 h1{

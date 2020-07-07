@@ -3,28 +3,21 @@ import moment from 'moment';
 
 const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) => (
     
-    <div  className="ccc">
+    <div  className="main-detail-container">
 
-    <div className="leftcontainer">
-    <h2 className="symbol"> {symbol} </h2>
-    <div className="entryMillis">
-    <p>
-    {moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   
-    </p>
+    <div className="detail-top-container">
+    <div className="header-left">
+    <h2> {symbol} </h2>
+    <p>{moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   </p>
     </div>
-    <p className="price">
-        {(entryPrice || entryPrice).toFixed(2)}
-    </p>
-
+    <p>{(entryPrice || entryPrice).toFixed(2)}</p>
     </div>
 
-    <div className="rightcontainer">
-    <p className="eventDescription">
-        {eventDescription}
-    </p>
-   
-    <p className="diff">{(diff || diff).toFixed(2)}</p>
-    </div>    
+    <div className="detail-bottom-container">
+    <p>{eventDescription}</p>
+    <p>{(diff || diff).toFixed(2)}</p>
+    </div> 
+
     </div>
 
 );
