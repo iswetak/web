@@ -88,7 +88,7 @@ export default class Combinations1 extends Component {
 
           <div className={style.main_banner}>
               <img src={this.state.basketImageURL} className={style.banner_logo}></img>           
-              <h2 className={style.banner_title, style.header_h2_color} >{this.state.basketDescription}</h2>
+              <h2 className={style.banner_title, style.header_h2_color}>{this.state.basketDescription}</h2>
           </div>
             
             <FlatList

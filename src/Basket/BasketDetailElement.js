@@ -7,8 +7,8 @@ const CustomRow = ({ symbol,eventDescription, entryPrice, diff, entryMillis  }) 
 
     <div className="detail-top-container">
     <div className="header-left">
-    <h2> {symbol} </h2>
-    <p>{moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}   </p>
+    <h2>{symbol}</h2>
+    <p>{moment(entryMillis || moment.now()).format("(DD MMM hh:mm a)")}</p>
     </div>
     <p>{(entryPrice || entryPrice).toFixed(2)}</p>
     </div>
