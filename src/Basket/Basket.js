@@ -77,8 +77,8 @@ export  default class Basket extends  React.Component {
         return (
           <div>
              <div className={style.light_gray_background }>
-             <div className={style.main_banner}>
-             <img src={require('../Images/basket-removebg-preview (1).png')} className={style.banner_logo}></img>
+             <div className={style.main_banner} >
+             <img src={require('../Images/basket-removebg-preview (1).png')} className="basket_logo"></img>
              <h1 className={style.banner_title}>Stock Screeners</h1>
              </div>
              </div>  
@@ -96,7 +96,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <h2 className={style.header_h2_color}>{k.basketName}</h2>
+          <h3>{k.basketName}</h3>
           </div>
           </div>
           ))}
@@ -104,7 +104,7 @@ export  default class Basket extends  React.Component {
           </div>
           </div>
 
-          <div  label="Techmical">
+          <div  label="Technical">
           <div class="collections">
           {this.state.technicalData.map((k) => (
           <div className="collection-item">
@@ -115,7 +115,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <h2 className={style.header_h2_color}>{k.basketName}</h2>
+          <h3>{k.basketName}</h3>
           </div>
           </div>
 
@@ -137,7 +137,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <h2 className={style.header_h2_color}>{k.basketName}</h2>
+          <h3>{k.basketName}</h3>
           </div>
           </div>
 
@@ -159,7 +159,7 @@ export  default class Basket extends  React.Component {
           basketID : k.basketID
           } 
           }}><img src={k.basketImageURL} className="img-container" /></Link> 
-          <h2 className={style.header_h2_color}>{k.basketName}</h2>
+          <h3>{k.basketName}</h3>
           </div>
           </div>
 

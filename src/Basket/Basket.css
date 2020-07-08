@@ -1,3 +1,10 @@
+ /* --------------banner-logo----------------------- */
+ .basket_logo{
+   height: 5em;
+   height: 5em;
+   object-fit: contain;
+ }
+ 
  /* ------------------------tab-list------------------- */
 .tab-list {
   border-bottom: 1px solid #ccc;
@@ -8,7 +15,8 @@
 .tab-list-item {
   display: inline-block;
   list-style: none;
-  /* margin-bottom: -1px; */
+  font-size: 1.3rem;
+  margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
 }
 .tab-list-active {
@@ -42,8 +50,8 @@
 }
 .img-container {
   align-items: center;
-  height: 10vw;
-  width: 10vw;
+  height: 11vw;
+  width: 11vw;
 }
 
  /* -------------------------collection-media-queries------------- */
@@ -51,5 +59,6 @@
   
   .collection-item{
     flex: 0 0 47%;  
+    padding-top: 2vh;
   }
 }

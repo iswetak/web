@@ -35,9 +35,9 @@ body {
 
 }
 .banner_logo{
-  object-fit: center;
+  object-fit: contain;
   height: 8vw;
-  width:8vw;
+  width:8vw;  
 }
 .banner_title{
   margin-left: 1%;
@@ -45,19 +45,24 @@ body {
 .header_h2_color {
   color: var(--h2-color);
 }
-
 h1{
   font-size: 2rem;
   font-weight: bold;
 }
 h2{
-  font-size: 1.2rem;
   color: var(--font-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+h3{ 
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: normal;
 }
 p{
   font-size: 1rem;
   letter-spacing: normal;
+  line-height: 0;
 }
 

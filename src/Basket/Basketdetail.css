@@ -1,6 +1,17 @@
  /* --------------------main-header-icon--------------- */
 .header-icon {
      color:#2196F3;
+     margin-left: 1rem;
+}
+ /* ----------------------header-description--------------- */
+
+.header-description{
+    display:flex; 
+    padding: 1%;
+}
+.description-logo{
+    height: 8vh;
+    width: 8vh;
 }
 
  /* ------------------------main-container---------------- */

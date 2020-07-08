@@ -1,8 +1,7 @@
 .maincontainer {
-    width:94%;
+    width:100%;
     flex-direction: row;
     padding-bottom: -50px;
-    margin-left: 3%;
 }
 
 .topheader{

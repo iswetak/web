@@ -10,8 +10,8 @@ const PulseElement = ({ title,subtitle1, subtitle2, subtitle3 }) => (
             </div>
 
             <div className="description-container">
-            <p>{subtitle1} </p>
-            <p>{ moment( subtitle3 || moment.now()).format("hh:mm a") }</p>
+            <h3>{subtitle1} </h3>
+            <h3>{ moment( subtitle3 || moment.now()).format("hh:mm a") }</h3>
             </div>
             </div>
         

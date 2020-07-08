@@ -82,12 +82,12 @@ export default class Combinations1 extends Component {
           <div className={style.light_gray_background}>
           <div className={style.main_banner}>      	
           <Link to='/'><ArrowBackIosIcon className="header-icon"></ArrowBackIosIcon></Link>
-          <h1 className="mainheader">{this.state.basketName}</h1>
+          <h1 className={style.banner_title}>{this.state.basketName}</h1>
           </div>
           </div>
 
-          <div className={style.main_banner}>
-              <img src={this.state.basketImageURL} className={style.banner_logo}></img>           
+          <div className="header-description">
+              <img src={this.state.basketImageURL} className="description-logo"></img>           
               <h2 className={style.banner_title, style.header_h2_color}>{this.state.basketDescription}</h2>
           </div>
             
