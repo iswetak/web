@@ -74,14 +74,5 @@
     border: 0.1px solid #DCDCDC;
 } 
 
-@media (min-width: 200px) and (max-width: 399px) {
-    .headerimg {
-        height: 10%;
-        width: 20%;
-        margin-top: 3%;
-    }
-     
-}
-
 
 
