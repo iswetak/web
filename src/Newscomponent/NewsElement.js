@@ -18,6 +18,8 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                 <p className={styles.source}>{source}</p>
                 <p class={styles.publishedAt}>{moment(publishedAt || moment.now()).format("hh:mm a")}</p>                        
                 </div>
+
+                {/* -----------------------news-header-img--------------------- */}
                 
                 <div className={styles.header_image}>
                 <img src={urlToImage} className={urlToImage!=null?styles.stretch : styles.hidden} />

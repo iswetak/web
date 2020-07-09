@@ -22,7 +22,6 @@
 .info_twitterHandle {
     width: 4vw;
     float: left;
-    background-color: #c74141;
 }
 .twitterHandle {
     object-fit: cover;
@@ -39,6 +38,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+ /* -----------news-header-image-------- */
 .header_image{
     border: 0.1px solid white;
 }
@@ -60,6 +61,7 @@
     line-height: normal;
 }
  /* -------------twitter-url----------------- */
+ 
 .url_container{
     display: flex;
     flex-direction: column;
