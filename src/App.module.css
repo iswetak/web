@@ -28,7 +28,6 @@ body {
     background-color: var(--light-gray-color);
 }
 .main_banner{
-  /* width: 100%; */
   display:flex; 
   padding: 1%;
   align-items: center;
