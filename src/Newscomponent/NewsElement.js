@@ -18,13 +18,18 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                 <p className={styles.source}>{source}</p>
                 <p class={styles.publishedAt}>{moment(publishedAt || moment.now()).format("hh:mm a")}</p>                        
                 </div>
+                
+                <div className={styles.header_image}>
+                <img src={urlToImage} className={urlToImage!=null?styles.stretch : styles.hidden} />
+                </div>
+
                 <div className={styles.container_text}>
-                <h2>{title}</h2>
-                <p>{subtitle1 }</p>
+                <h2 className={styles.subtitle}>{title}</h2>
+                <p className={styles.subtitle}>{subtitle1}</p>
                 </div>
                 <div className={styles.url_container}>
                 <div className={styles.url}>
-                <p className={twitterHandle!=null?styles.twitterHandle : styles.hidden}>@ {twitterHandle}</p>
+                <p className={twitterHandle!=null?styles.twitterHandle_url : styles.hidden}>@ {twitterHandle}</p>
                 <p className={styles.twitter_url}>
                 <a className={styles.link} target="_blank" href={twitterurl}>{eventCategory=="NEWS"?"Read More":"Open In Twitter"}</a>
                 </p>

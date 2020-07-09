@@ -39,13 +39,25 @@
     display: flex;
     justify-content: space-between;
 }
+.header_image{
+    border: 0.1px solid white;
+}
+.stretch {
+    object-fit: contain;
+    width: 100%;
+}
 .container_text {
+    height: auto;
     border: 0.1px solid #D0D0D0;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     padding-left: 1%;
-    line-height: 0;
+    /* line-height: 0; */
+}
+.subtitle{
+    margin-top: 1%;
+    line-height: normal;
 }
  /* -------------twitter-url----------------- */
 .url_container{
@@ -54,6 +66,7 @@
 }
 .url{
     display: flex;
+    justify-content: space-between;
 }
 .link{
     text-decoration: none; 
