@@ -26,7 +26,7 @@ const CustomRow = ({ eventCategory,title,subtitle1, urlToImage, avatarURL, publi
                 </div>
 
                 <div className={styles.container_text}>
-                <h2 className={styles.subtitle}>{title}</h2>
+                <h2 className={styles.subtitle1}>{title}</h2>
                 <p className={styles.subtitle}>{subtitle1}</p>
                 </div>
                 <div className={styles.url_container}>

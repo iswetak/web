@@ -1,0 +1,55 @@
+.info-header{
+    padding-top: 8.9vh;
+    text-align: center;
+}
+.info-subheader{
+    margin-top: 1vh;
+    text-align: center;
+}
+.info-grid-collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.9vh;
+    margin-left: 5% ;
+    margin-right: 5%;
+    padding-bottom:5%;
+  }
+  .info-container{
+    display: flex;
+    flex: 0 0 29.5%; 
+    flex-direction: column;
+    height: auto;
+    margin-left: 1.7%;
+    margin-right: 1.7%;
+    background-color: #ffffff;
+  }
+  .people-name{
+    text-align: center;
+    margin-top: 3.3vh;
+  }    
+  .info-image-container{
+    margin-top: 3.8vh;
+  }
+  .people-image{
+    display: block;
+    height: 7vw;
+    margin-top: 3.4vh;
+    margin-bottom: 3.3vh;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    width: 7vw;
+    background-color: #ffffff;
+  
+  }
+  .people-description{
+    text-align: center;
+    margin-left: 11.4%;
+    margin-right: 11.1%;
+  }
+  .small-divider{
+    border: 1px solid;
+    margin-top: 1.5vh;
+    margin-left: 37.6%;
+    margin-right: 37.6%;
+  }
