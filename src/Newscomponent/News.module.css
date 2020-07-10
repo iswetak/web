@@ -76,8 +76,7 @@
     text-decoration: none; 
     color: #1569C7;
     cursor: pointer;
-    /* float: right; */
-    /* width: 20%; */
+    float: right;
 }
 .hidden {
     display: none;
