@@ -1,13 +1,12 @@
  /* ------------------main-container------------------ */
 .news_main_container {
     border: 0.1px solid #DCDCDC; 
-    border-width:thin;
     padding: 1rem;
 }
 
  /* ----------------container-info-------------- */
 
-.description_container{
+.news_container{
     display: flex;
     flex-direction: row;
 }
@@ -17,30 +16,31 @@
 }
 .avatar {
     object-fit: contain;
-    height:5vw;
-    width:5vw;
+    height:6vw;
+    width:6vw;
 }
-.twitterHandle {
-    object-fit: cover;
-    height: 5vw;
-    width: 5vw;
+.twitter {
+    object-fit: contain;
+    height: 6vw;
+    width: 6vw;
 }
-.right_container{
+.news_description{
     display: flex;
     flex-direction: column;
-    margin-left: 0.3%;
-    width: 95%;
+    margin-left: 0.3rem;
+    width: 95vw;
 }
-.title{
+.top_header_info{
     display: flex;
     justify-content: space-between;
 }
 
  /* -----------news-header-image-------- */
+
 .header_image{
     border: 0.1px solid white;
 }
-.stretch {
+.image_stretch {
     object-fit: contain;
     width: 100%;
 }
@@ -52,35 +52,32 @@
     flex-direction: column;
     padding-left: 1%;
 }
-.subtitle1{
+.title_header{
     line-height: normal;
+    margin-top: 0.9rem;
 }
 .subtitle{
     margin-top: 0%;
     line-height: normal;
 }
+
  /* -------------twitter-url----------------- */
 
 .url_container{
     display: flex;
-}
-.url{
-    display: flex;
     justify-content: space-between;
+    margin-top: 1%;
 }
-.twitterHandle_url{
-    background-color: #1569C7;
-    /* width: 70%; */
+.twitterHandle_container{
+    width: 70%;   
 }
 .link{
     text-decoration: none; 
     color: #1569C7;
     cursor: pointer;
-    float: right;
 }
 .hidden {
     display: none;
 }
-
 
 
