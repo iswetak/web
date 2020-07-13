@@ -30,6 +30,7 @@ body {
 .main_banner{
   display:flex; 
   padding: 1%;
+  padding-left: 2%;
   align-items: center;
 
 }

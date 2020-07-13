@@ -7,15 +7,16 @@
  
  /* ------------------------tab-list------------------- */
 .tab-list {
+  border: solid 1px #c1c1c1;
   border-bottom: 1px solid #ccc;
-  margin-top: 0.1%;
-  padding-left: 1%;
+  margin-top: 0%;
   cursor: pointer; 
 }
 .tab-list-item {
   display: inline-block;
-  list-style: none;
   font-size: 1.3rem;
+  list-style: none;
+  margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
 }
 .tab-list-active {

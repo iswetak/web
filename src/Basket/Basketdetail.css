@@ -6,6 +6,7 @@
  /* ----------------------header-description--------------- */
 
 .header-description{
+    border: 0.1px solid #DCDCDC;
     display:flex; 
     padding: 1%;
 }
@@ -26,8 +27,8 @@
 .detail-top-container{
     display: flex;
     justify-content: space-between;  
-    margin-left: 1.2%;
-    margin-right: 1.2%;    
+    margin-left: 1.5%;
+    margin-right: 1.5%;    
 }
 .header-left {
     display: flex;
@@ -36,6 +37,6 @@
 .detail-bottom-container {
     display: flex;
     justify-content: space-between;      
-    margin-left: 1.2%;
-    margin-right: 1.2%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }

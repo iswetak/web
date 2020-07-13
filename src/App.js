@@ -10,8 +10,8 @@ export default class App extends Component {
         return (
       <div>
         {/* <Slider /> */}
-         {/* <Basket/> */}
-         <News />
+         <Basket/>
+         {/* <News /> */}
        {/* <Pulse/> */}
       </div>
     );
