@@ -128,7 +128,7 @@ export  default class Basket extends  React.Component {
 
           <div label="Combination">
           <div class="collections">
-          {this.state.marketData.map((k) => (
+          {this.state.combinationData.map((k) => (
           <div className="collection-item">
           <div className="collection-header">
           <Link to={{
@@ -150,7 +150,7 @@ export  default class Basket extends  React.Component {
 
           <div label="Market">
           <div class="collections">
-          {this.state.combinationData.map((k) => (
+          {this.state.marketData.map((k) => (
           <div className="collection-item">
           <div className="collection-header">
           <Link to={{
